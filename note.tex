@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage[export]{adjustbox}
 \usepackage{cite}
+\usepackage{subcaption}
 \renewcommand{\baselinestretch}{1.5}
 \parskip10pt
 \topmargin10mm
@@ -94,7 +95,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 In this note we will explain the analysis details to obtain the Dalitz plot parameters of the decay of $\eta^{\prime}$ \rightarrow$ \eta$ \pi^{+}$ \pi^{-}$
-meson. The final state particles proton, \pi^{+}$ and $\pi^{-}$ are identified with the particle identification codes compiled in the ``clas6-trunk" under the package CLASEVENT. We selected a data sample with all those events which has only one proton, $\pi^{+}$ and $\pi^{-}$ in their final state and no matter how many neutral particles. 
+meson. The final state particles proton, \pi^{+}$ and $\pi^{-}$ information from PART BOS bank are identified with the particle identification codes compiled in the ``clas6-trunk" under the package CLASEVENT . We selected a data sample with all those events which has only one proton, $\pi^{+}$ and $\pi^{-}$ in their final state and no matter how many neutral particles. 
 
 
 We started the analysis with well calibrated data as ".root" files with all events arranged as per the Run number, Event number and PID along with all other informations recorded by the experiment. The calibrated data is then corrected and further processed following the steps of `` g12 procedures working version.pdf " and properly tuned Kinematic Fitter available at G12 Wikki. We have divided our analysis into the following subsequent sections.
@@ -104,7 +105,7 @@ We started the analysis with well calibrated data as ".root" files with all even
 \item Simulation : The Section 3 will explain our analysis model and will produce a cross check to the whole analysis
 \item Result : The Section 4 will report the final results of the measurement with a study of systematics.  
 \end {itemize}
-The complete reaction under study is `` $\gamma$ p $\rightarrow$ $\eta^{\prime}$($\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$) p " and do not detect $\eta$ meson. This is a missing mass analysis using a fixed target g12 experiment, which has an energy of the photon beam ranging from 1.142 GeV to  5.425 GeV. However the threshold of $\eta^{\prime}$ meson is 1.455 GeV and hence we analysed the data from the threshold to our maximum available energy. 
+The complete reaction under study is `` $\gamma$ p $\rightarrow$ $\eta^{\prime}$($\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$) p " and we do not detect $\eta$ meson. This is a missing mass analysis using a fixed target g12 experiment, which has an energy of the photon beam ranging from 1.142 GeV to  5.425 GeV. However the threshold production of $\eta^{\prime}$ meson is 1.455 GeV and hence we analysed the data from the threshold to our maximum available energy. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -219,12 +220,12 @@ G12 Run List &G12 Run List & G12 Run List & G12 Run List & G12 Run List \\
 
 \subsection{Selection of the Beam Photon}
 
-In an event we found that multiple bremsstrahlung photons were recorded as the incident beam. The multiple beam photon arises from 2.004 beam bunching spacing of the electrons in the storage ring. These electrons gives the bremsstrahlung photons in the radiator and creates multiple hits in the trigger and thereby satisfying trigger logic to record them. In this analysis we selected all the  photons which falls within the timing window of $\mid$Tagger Time - StartTime$\mid$ $\leqq$ 1.002 ns, and consider each of them as an individual event.
+In an event we found that multiple bremsstrahlung photons were recorded as the incident beam. The multiple beam photon arises from 2.004 beam bunching spacing of the electrons in the storage ring. These electrons gives the bremsstrahlung photons in the radiator and creates multiple hits in the trigger and thereby satisfying trigger logic to record them. In this analysis we selected all the  photons which falls within the timing window of $\mid$Tagger Time - StartTime$\mid$ $\leq$ 1.002 ns, and consider each of them as an individual event.
 
 
 \subsection{Vetex Cut}
-
-In the g12 experiment the target was positioned -90 cm from the CLAS center. The target cell was 40 cm long and 2 cm in radius in the form of a cylinder filled with unpolarised liquid hydrogen. We used this target information and imposed it to all event vertexes. We required all events  production vertex tracks to originate in the target region via the condition that $\sqrt{v_{x}^{2} + v_{y}^{2}}$ $\leqq$ 2 cm and -110 $\geqq$ v_{z} $\leqq$ -70 cm. 
+\label{VCut}
+In the g12 experiment the target was positioned -90 cm from the CLAS center. The target cell was 40 cm long and 2 cm in radius in the form of a cylinder filled with unpolarised liquid hydrogen. We used this target information and imposed it to all event vertexes. We required all events  production vertex tracks to originate in the target region via the condition that $\sqrt{v_{x}^{2} + v_{y}^{2}}$ $\leq$ 2 cm and -110 $\geq$ v_{z} $\leq$ -70 cm. 
 
 \begin{figure}[ht!]
 \centerline{
@@ -234,7 +235,7 @@ In the g12 experiment the target was positioned -90 cm from the CLAS center. The
 \end{figure}
 
 \subsection{Timing Cuts on proton, $\pi^{+}$ and $\pi^{-}$}
-
+\label{TCut}
 As a post PID improvement of the detected final state particles $\pi^{+}$, $\pi^{-}$ and proton, we introduced a vertex timing $(t_{vert})$ cut of particles in the analysis. The $t_{vert}$, vertex time is the instant of time the particle left the target. One can calculate it through the information of the TOF detectors as,
 
 \begin{equationarray}
@@ -258,11 +259,21 @@ The difference of the $t_{vert}(TOF)$ from $t_{vert}(Tagger)$ is shown in Fig.$~
 \end{figure}
 
 
-\subsection{Kinematic Fitting}
+\section{G12 Corrections}
+\label{Cor}
+The G12 Corrections were derived from the exclusive $\pi^{+}$, $\pi^{-}$ and proton reaction. We used the following corrections in the analysis :
+    
+\begin {itemize}
+\item Beam Energy Correction : Is a correction to the incident beam photon energy and dependent on the Run number of the event. This correction is only applicable data and not to the simulated events.
+\item Removal of bad TOF paddle : This correction takes the Sector number, Paddle number as input. We used the correction to remove only those paddles that shows a significant drift on the resolutions of particle.   
+\item  Geometric Fiducial Cut : This cut removes the dead part of the detector from the $\theta-\phi$ map of the particle. We used it with the "nominal" option. 
+\end {itemize}
 
+\subsection{Kinematic Fitting}
+\label{KF}
 Kinematic fitter is a useful tool often used to get rid of unwanted background from signal channels and helps to improve the signal to background ratio.  Any measurement with a tool comes with an error, and it can be represented as a vector  $\vec{\eta}$. We can also define the measurement as 
 \\ $\vec{\eta}$ =  $\vec{y}$. +  $\vec{\epsilon}$.\\
-Where the $\vec{y}$ and $\vec{\epsilon}$ denotes the actual value of the measurement without error and $\vec{\epsilon}$ is the error associated with the measurement. The kinematic information of a physics channel along with the constrains imposed allows the fitter to calculate the probability and $\chi^{2}$ of each event using Lagrange multipliers to perform a least-squares fit. The CLAS g12 Kinematic fitter takes the "TBER (Track Based Error)" matrix, vertex of information and lorentzvector of all particles as input, and returns Pull probabilities and $\chi^{2}$ for each events. The Pull probabilities when fitted with Guassian, its mean and $\sigma$ decides the quality of the covariance matrix and kinematic fit. In the ideal case of gaussian fitted to the Pulls of the particles should have  zero mean and $\sigma$ of one, which ensures that the fitter correctly calculates covariance matrix error. 
+Where the $\vec{y}$ and $\vec{\epsilon}$ denotes the actual value of the measurement without error and $\vec{\epsilon}$ is the error associated with the measurement. The kinematic information of a physics channel along with the constrains imposed allows the fitter to calculate the probability and $\chi^{2}$ of each event using Lagrange multipliers to perform a least-squares fit. The CLAS g12 Kinematic fitter takes the ``TBER (Track Based Error)" matrix, vertex of information and lorentzvector of all particles as input, and returns Pull probabilities and $\chi^{2}$ for each events. The Pull probabilities when fitted with Guassian, its mean and $\sigma$ decides the quality of the covariance matrix and kinematic fit. In the ideal case of gaussian fitted to the Pulls of the particles should have  zero mean and $\sigma$ of one, which ensures that the fitter correctly calculates covariance matrix error. 
   
 \begin{figure}[ht!]
 \centerline{
@@ -277,5 +288,122 @@ Where the $\vec{y}$ and $\vec{\epsilon}$ denotes the actual value of the measure
 \caption{The Pull distributions for a (4-C) kinematic fit to $\gamma$ p $\rightarrow$ $\pi^{+}$ $\pi^{-}$ p from g12 simulation after a 1$\%$ Pull probability cut.}
 \label{Fig4}
 \end{figure}
+  
+The CLAS g12 Kinematic fitter is tuned for 4C constrained reaction,
 
+\begin{equationarray}
+$\gamma$ p $\rightarrow$ $\pi^{+}$ $\pi^{-}$ p. 
+\end{equationarray}\\
+\noindent
+The tuning were done for $\pi^{+}$ $\pi^{-}$ and p individually. To check the quality of covariance matrix we have shown the tuned pulls of the particles $\pi^{+}$, $\pi^{-}$ and p from the reaction hypothesis for the data with run 56655 and simulation after a 1$\%$ pull probability cut. The mean and sigma from of the particles are listed in the Table.~\ref{tab2}.
+
+\begin{table}
+\centering
+\begin{subtable}{.5\textwidth}
+\centering
+\caption{ }
+\begin{tabular}{ |c|c|c| }
+\hline
+                                        & \mu   & \sigma \\
+                               \hline
+Proton p-pull                            & 0.187  & 0.846  \\
+\hline
+Proton $\lambda$-pull                      & -0.029 & 0.928  \\
+\hline
+Proton $\phi$-pull                         & -0.016 & 1.092  \\
+\hline
+$\pi^{+}$ p-pull        & 0.081  & 0.957  \\
+\hline
+$\pi^{+}$ $\lambda$-pull & 0.035  & 0.954  \\
+\hline
+\pi^{-} $\phi$-pull    & -0.077 & 1.033  \\
+\hline
+\pi^{-} p-pull        & 0.089  & 0.969  \\
+\hline
+\pi^{-} $\lambda$-pull & 0.006  & 0.975  \\
+\hline
+\pi^{-} $\phi$-pull    & -0.068 & 1.062  \\
+\hline
+$\gamma$ E-pull   & -0.159 & 1.069 \\
+\hline
+\end{tabular}
+\end{subtable}%
+\begin{subtable}{.5\textwidth}
+\centering
+\caption{ }
+\begin{tabular}{ |c|c|c| }
+\hline
+                                         & \mu   & \sigma \\ \hline
+Proton p-pull                             & 0.267  & 1.146  \\
+\hline
+Proton $\lambda$-pull                  & 0.024  & 0.938  \\
+\hline
+Proton $\phi$-pull                         & -0.000 & 0.985  \\
+\hline
+$\pi^{+}$ p-pull        & 0.203  & 1.064  \\
+\hline
+$\pi^{+}$ $\lambda$-pull & 0.016  & 0.943  \\
+\hline
+$\pi^{+}$ $\phi$-pull    & -0.060 & 0.983  \\
+\hline
+$\pi^{-}$ p-pull        & 0.187  & 1.098  \\
+\hline
+$\pi^{-}$ $\lambda$-pull & 0.007  & 0.959  \\
+\hline
+$\pi^{-}$ $\phi$-pull    & -0.123 & 0.990  \\
+\hline
+$\gamma$ E-pull                           & -0.312 & 1.092  \\ 
+\hline
+\end{tabular}
+\end{subtable}%
+\caption{The table shows the Gaussian mean ($\mu$) and width ($\sigma$) for the pull distributions from a 4C kinematic fit of  $\gamma$ p $\rightarrow$ $\pi^{+}$ $\pi^{-}$ to events from (A) data run 56655 and (B) from simulation after a 1$\%$ Pull probability cut.} 
+\label{tab2}
+\end{table}
+
+\subsubsection{Fit to the Analysis}
+
+	We use the tuned Kinematic fitter for the 4C constrained fit described above to the reaction hypothesis for our channel 
+\begin{equationarray}
+$\gamma$ p $\rightarrow$ $(\eta)_{Missing}$ $\pi^{+}$ $\pi^{-}$ p.
+\end{equationarray}\\	
+ We required the M_{x}(p$\pi^{+}$$\pi^{-}$) has to be an $\eta$ meson. Our reaction hypothesis has the same set of final state particles as for the tuned channel, hence we can comfortably use it without tuning it for our reaction hypothesis again. The Pull probability for the channel of our interest is shown in Fig.~\ref{Fig5} and the dotted line at 0.01 shows the 1$\%$ Pull probability cut to reject events. 
+ 
+\subsection{Simulation}
+Pluto, an event generator is used for this analysis. Pluto uses ROOT based programmes very commonly used in Hadron Physics experiments to generate hadronic production and decay. It gives user the freedom to include physics models with simple C++ based codes and to obtain outputs in any desired format. Our simulated events are modelled with bremsstrahlung photon, differential cross-section of $\eta^{\prime}$ and Dalitz plot parameters of $\eta^{\prime}$ \rightarrow$ \eta$ \pi^{+}$ \pi^{-}$ decay. We took the output of the PLUTO program in standared CLAS "gamp" file and processed it with CLAS simulation suit :
+
+\begin {itemize}
+\item The gamp files are first converted into the format of PART bank containing the event.
+\item GSIM:  Geant3-based simulation in CLAS simulates the decay tracks of particles through the simulation and finally the digitized informations is sorted in the simulated ``raw" banks.
+\item GPP: GSIM post-processor smears detector signal more accurately to reflect the actual resolution and to simulate the experimental conditions.  
+\item a1c : It is used for reconstruction of simulated data and is the same program used during data reconstruction.
+\end {itemize}
+
+The simulated events are then passed through same conditions of Section.~\ref{VCut}, Section.~\ref{TCut}, Section.~\ref{Cor} and Section.~\ref{KF}.
+  
+\begin{figure}[ht!]
+\centerline{
+\includegraphics[width=12cm,height=8cm]{Prob_etafit.pdf}}
+\caption{The Pull probability for a (1-C) kinematic fit to $\gamma$ p $\rightarrow$ ($\eta_{Missing})$ $\pi^{+}$ $\pi^{-}$ p from data run 56655.}
+\label{Fig5}
+\end{figure}
+ 
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+Cuts                                        & g12 Run 56655                    & Simulation \\
+\hline
+Generated                               & ---                          & 10001500   \\
+Reconstructed                           & 42947                        & 855447     \\
+Vertex Cut                              & 20092                        & 505405     \\
+Timing Cut                              & 11390                        & 451470     \\
+Multiple $E_{\gamma}$ & 14986 & ---            \\
+Fiducial Cuts                           & 10541                        & 276432     \\
+Prob((\eta)\pi^{+}\pi^{-}p) \textgreater 0.01                & 1901                         & 259136    \\
+\hline
+\end{tabular}
+\caption{The table shows the cut flow of the analysis from g12 data run 56655 and simulated events.}
+\label{my-label}
+\end{table}
+ 
 \end{document}
