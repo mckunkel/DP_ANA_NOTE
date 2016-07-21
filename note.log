@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.4)  11 JUL 2016 10:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.4)  20 JUL 2016 14:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -264,52 +264,26 @@ Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 \c@theorem=\count111
 
-
-./note.tex:38: LaTeX Error: Command \be already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.38 \newcommand{\be}{\begin{equation}}
-                                       
-? r
-OK, entering \nonstopmode...
-
-./note.tex:39: LaTeX Error: Command \ee already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.39 \newcommand{\ee}{\end{equation}}
-                                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 (./note.aux)
 \openout1 = `note.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Try loading font information for U+msa on input line 80.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Try loading font information for U+msa on input line 79.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 80.
+LaTeX Font Info:    Try loading font information for U+msb on input line 79.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -380,583 +354,48 @@ Package caption Info: End \AtBeginDocument code.
 
 (./title.tex) [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdft
 ex.map}]
-./note.tex:97: Missing $ inserted.
-<inserted text> 
-                $
-l.97 ...f the decay of $\eta^{\prime}$ \rightarrow
-                                                  $ \eta$ \pi^{+}$ \pi^{-}$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:97: Missing $ inserted.
-<inserted text> 
-                $
-l.97 ...decay of $\eta^{\prime}$ \rightarrow$ \eta
-                                                  $ \pi^{+}$ \pi^{-}$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:97: Missing $ inserted.
-<inserted text> 
-                $
-l.97 ... of $\eta^{\prime}$ \rightarrow$ \eta$ \pi
-                                                  ^{+}$ \pi^{-}$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:97: Missing $ inserted.
-<inserted text> 
-                $
-l.97 ...^{\prime}$ \rightarrow$ \eta$ \pi^{+}$ \pi
-                                                  ^{-}$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:98: Missing $ inserted.
-<inserted text> 
-                $
-l.98 meson. The final state particles proton, \pi
-                                                 ^{+}$ and $\pi^{-}$ informa...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1]
-[2] [3] [4]
-./note.tex:228: Missing $ inserted.
-<inserted text> 
-                $
-l.228 ..._{y}^{2}}$ $\leq$ 2 cm and -110 $\geq$ v_
-                                                  {z} $\leq$ -70 cm.
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:228: Missing $ inserted.
-<inserted text> 
-                $
-l.228 ...$ $\leq$ 2 cm and -110 $\geq$ v_{z} $\leq
-                                                  $ -70 cm.
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:232: Undefined control sequence.
-<argument>  \subfloat 
-                      {\includegraphics [height=5.8in]{vertex.pdf}}
-l.232 ...cludegraphics[height=5.8in]{vertex.pdf}}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<vertex.pdf, id=26, 569.12625pt x 632.3625pt>
+[2] [3] [4] <vertex.pdf, id=26, 569.12625pt x 632.3625pt>
 File: vertex.pdf Graphic file (type pdf)
  <use vertex.pdf>
-Package pdftex.def Info: vertex.pdf used on input line 232.
+Package pdftex.def Info: vertex.pdf used on input line 231.
 (pdftex.def)             Requested size: 377.25711pt x 419.16621pt.
- [5]
 
-./note.tex:241: LaTeX Error: Environment equationarray undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.241 \begin{equationarray}
-                           
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./note.tex:242: Missing $ inserted.
-<inserted text> 
-                $
-l.242 $t_{vert}$(TOF) = t_
-                          {TOF}$  -  $\frac{l_{TOF}}{c\beta}$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-./note.tex:243: LaTeX Error: \begin{document} ended by \end{equationarray}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.243 \end{equationarray}
-                         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./note.tex:246: Missing } inserted.
-<inserted text> 
-                }
-l.246 where $t_{TOF}$ and ${l_{TOF}$
-                                     are the measured time and length of par...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./note.tex:246: Missing $ inserted.
-<inserted text> 
-                $
-l.246 ...r measure by the tagger added with the t_
-                                                  {prop}$, which is the prop...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
+[5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6 <./vertex.pdf>]
-
-./note.tex:248: LaTeX Error: Environment equationarray undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.248 \begin{equationarray}
-                           
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./note.tex:249: Missing $ inserted.
-<inserted text> 
-                $
-l.249 t_
-        {vert}(Tagger) = t_{photon} + t_{prop}.
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-./note.tex:250: LaTeX Error: \begin{document} ended by \end{equationarray}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.250 \end{equationarray}
-                         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./note.tex:250: Missing $ inserted.
-<inserted text> 
-                $
-l.250 \end{equationarray}
-                         
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./note.tex:256: Undefined control sequence.
-<argument>  \subfloat 
-                      {\includegraphics [height=5.8in]{timing.pdf}}
-l.256 ...cludegraphics[height=5.8in]{timing.pdf}}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<timing.pdf, id=79, 569.12625pt x 630.355pt>
+ [6 <./vertex.pdf>] <timing.pdf, id=79, 569.12625pt x 630.355pt>
 File: timing.pdf Graphic file (type pdf)
  <use timing.pdf>
-Package pdftex.def Info: timing.pdf used on input line 256.
+Package pdftex.def Info: timing.pdf used on input line 254.
 (pdftex.def)             Requested size: 378.45552pt x 419.16621pt.
  [7]
-Underfull \vbox (badness 1038) has occurred while \output is active []
-
- [8 <./timing.pdf>] <Pulls_nothing.pdf, id=130, 569.12625pt x 295.1025pt>
+[8 <./timing.pdf>] <Pulls_nothing.pdf, id=129, 569.12625pt x 295.1025pt>
 File: Pulls_nothing.pdf Graphic file (type pdf)
 
 <use Pulls_nothing.pdf>
-Package pdftex.def Info: Pulls_nothing.pdf used on input line 280.
+Package pdftex.def Info: Pulls_nothing.pdf used on input line 278.
 (pdftex.def)             Requested size: 341.44365pt x 284.53346pt.
 
-<SIM_Pulls_nothing.pdf, id=131, 569.12625pt x 382.42876pt>
+<SIM_Pulls_nothing.pdf, id=130, 569.12625pt x 382.42876pt>
 File: SIM_Pulls_nothing.pdf Graphic file (type pdf)
 
 <use SIM_Pulls_nothing.pdf>
-Package pdftex.def Info: SIM_Pulls_nothing.pdf used on input line 287.
+Package pdftex.def Info: SIM_Pulls_nothing.pdf used on input line 285.
 (pdftex.def)             Requested size: 341.44365pt x 284.53922pt.
-
-
-./note.tex:294: LaTeX Error: Environment equationarray undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.294 \begin{equationarray}
-                           
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./note.tex:296: LaTeX Error: \begin{document} ended by \end{equationarray}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.296 \end{equationarray}
-                         \\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./note.tex:307: Missing $ inserted.
-<inserted text> 
-                $
-l.307 ...                                    & \mu
-                                                     & \sigma \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:307: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.307 ...                                & \mu   &
-                                                   \sigma \\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./note.tex:307: Missing $ inserted.
-<inserted text> 
-                $
-l.307 ...                                & \mu   &
-                                                   \sigma \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:307: Missing } inserted.
-<inserted text> 
-                }
-l.307 ...                                & \mu   &
-                                                   \sigma \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./note.tex:307: Missing $ inserted.
-<inserted text> 
-                $
-l.307 ...                         & \mu   & \sigma
-                                                   \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:308: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.308                                \hline
-                                           
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./note.tex:308: Missing $ inserted.
-<inserted text> 
-                $
-l.308                                \hline
-                                           
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:308: Missing } inserted.
-<inserted text> 
-                }
-l.308                                \hline
-                                           
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./note.tex:319: Missing $ inserted.
-<inserted text> 
-                $
-l.319 \pi
-         ^{-} $\phi$-pull    & -0.077 & 1.033  \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:319: Missing $ inserted.
-<inserted text> 
-                $
-l.319 \pi^{-} $\phi
-                   $-pull    & -0.077 & 1.033  \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:321: Missing $ inserted.
-<inserted text> 
-                $
-l.321 \pi
-         ^{-} p-pull        & 0.089  & 0.969  \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:321: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.321 \pi^{-} p-pull        &
-                              0.089  & 0.969  \\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./note.tex:321: Missing $ inserted.
-<inserted text> 
-                $
-l.321 \pi^{-} p-pull        &
-                              0.089  & 0.969  \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:321: Missing } inserted.
-<inserted text> 
-                }
-l.321 \pi^{-} p-pull        &
-                              0.089  & 0.969  \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./note.tex:323: Missing $ inserted.
-<inserted text> 
-                $
-l.323 \pi
-         ^{-} $\lambda$-pull & 0.006  & 0.975  \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:323: Missing $ inserted.
-<inserted text> 
-                $
-l.323 \pi^{-} $\lambda
-                      $-pull & 0.006  & 0.975  \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:325: Missing $ inserted.
-<inserted text> 
-                $
-l.325 \pi
-         ^{-} $\phi$-pull    & -0.068 & 1.062  \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:325: Missing $ inserted.
-<inserted text> 
-                $
-l.325 \pi^{-} $\phi
-                   $-pull    & -0.068 & 1.062  \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:336: Missing $ inserted.
-<inserted text> 
-                $
-l.336 ...                                    & \mu
-                                                     & \sigma \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:336: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.336 ...                                & \mu   &
-                                                   \sigma \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./note.tex:336: Missing $ inserted.
-<inserted text> 
-                $
-l.336 ...                                & \mu   &
-                                                   \sigma \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:336: Missing } inserted.
-<inserted text> 
-                }
-l.336 ...                                & \mu   &
-                                                   \sigma \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./note.tex:336: Missing $ inserted.
-<inserted text> 
-                $
-l.336 ...                         & \mu   & \sigma
-                                                   \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:336: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.336 ...               & \mu   & \sigma \\ \hline
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./note.tex:336: Missing $ inserted.
-<inserted text> 
-                $
-l.336 ...               & \mu   & \sigma \\ \hline
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:336: Missing } inserted.
-<inserted text> 
-                }
-l.336 ...               & \mu   & \sigma \\ \hline
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-./note.tex:366: LaTeX Error: Environment equationarray undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.366 \begin{equationarray}
-                           
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./note.tex:368: LaTeX Error: \begin{document} ended by \end{equationarray}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.368 \end{equationarray}
-                         \\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./note.tex:369: Missing $ inserted.
-<inserted text> 
-                $
-l.369  We required the M_
-                         {x}(p$\pi^{+}$$\pi^{-}$) has to be an $\eta$ meson....
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:369: Missing $ inserted.
-<inserted text> 
-                $
-l.369  We required the M_{x}(p$\pi
-                                  ^{+}$$\pi^{-}$) has to be an $\eta$ meson....
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Underfull \vbox (badness 1221) has occurred while \output is active []
-
- [9 <./Pulls_nothing.pdf, page is rotated 90 degrees>]
-./note.tex:372: Missing $ inserted.
-<inserted text> 
-                $
-l.372 ...parameters of $\eta^{\prime}$ \rightarrow
-                                                  $ \eta$ \pi^{+}$ \pi^{-}$ ...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:372: Missing $ inserted.
-<inserted text> 
-                $
-l.372 ...ters of $\eta^{\prime}$ \rightarrow$ \eta
-                                                  $ \pi^{+}$ \pi^{-}$ decay....
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:372: Missing $ inserted.
-<inserted text> 
-                $
-l.372 ...of $\eta^{\prime}$ \rightarrow$ \eta$ \pi
-                                                  ^{+}$ \pi^{-}$ decay. We t...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:372: Missing $ inserted.
-<inserted text> 
-                $
-l.372 ...{\prime}$ \rightarrow$ \eta$ \pi^{+}$ \pi
-                                                  ^{-}$ decay. We took the o...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-[10 <./SIM_Pulls_nothing.pdf, page is rotated 90 degrees>]
-<Prob_etafit.pdf, id=206, 569.12625pt x 295.1025pt>
+ [9 <./Pulls_nothing.pdf, page is rotated 90 degrees>] <Prob_etafit.pdf, id=177
+, 569.12625pt x 295.1025pt>
 File: Prob_etafit.pdf Graphic file (type pdf)
  <use Prob_etafit.pdf>
-Package pdftex.def Info: Prob_etafit.pdf used on input line 385.
+Package pdftex.def Info: Prob_etafit.pdf used on input line 365.
 (pdftex.def)             Requested size: 341.44365pt x 227.62587pt.
 
-[11]
+[10 <./SIM_Pulls_nothing.pdf, page is rotated 90 degrees>] [11]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 390.
-
-./note.tex:402: Missing $ inserted.
-<inserted text> 
-                $
-l.402 Prob((\eta
-                )\pi^{+}\pi^{-}p) \textgreater 0.01                & 1901   ...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 402.
 
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 402.
 
@@ -965,66 +404,69 @@ File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 402.
+ [12 <./Prob_etafit.pdf, page is rotated 90 degrees>] <w.pdf, id=257, 569.12625
+pt x 273.02pt>
+File: w.pdf Graphic file (type pdf)
 
+<use w.pdf>
+Package pdftex.def Info: w.pdf used on input line 414.
+(pdftex.def)             Requested size: 284.53638pt x 113.80943pt.
+ <Pip.pdf, id=258, 569.12625pt x 273.02pt>
+File: Pip.pdf Graphic file (type pdf)
+ <use Pip.pdf>
+Package pdftex.def Info: Pip.pdf used on input line 421.
+(pdftex.def)             Requested size: 398.3596pt x 113.80943pt.
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 402.
+<Pim.pdf, id=259, 569.12625pt x 273.02pt>
+File: Pim.pdf Graphic file (type pdf)
+ <use Pim.pdf>
+Package pdftex.def Info: Pim.pdf used on input line 428.
+(pdftex.def)             Requested size: 398.3596pt x 113.80943pt.
 
-./note.tex:402: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.402 ...^{-}p) \textgreater 0.01                &
-                                                   1901                     ...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+<P.pdf, id=260, 569.12625pt x 273.02pt>
+File: P.pdf Graphic file (type pdf)
+ <use P.pdf>
+Package pdftex.def Info: P.pdf used on input line 435.
+(pdftex.def)             Requested size: 398.3596pt x 113.80943pt.
 
-./note.tex:402: Missing $ inserted.
-<inserted text> 
-                $
-l.402 ...^{-}p) \textgreater 0.01                &
-                                                   1901                     ...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-./note.tex:402: Missing } inserted.
-<inserted text> 
-                }
-l.402 ...^{-}p) \textgreater 0.01                &
-                                                   1901                     ...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+ [13 <./w.pdf, page is rotated 90 degrees>]
 
-[12 <./Prob_etafit.pdf, page is rotated 90 degrees>] (./note.aux) ) 
+LaTeX Warning: Text page 14 contains only floats.
+
+[14 <./Pip.pdf, page is rotated 90 degrees> <./Pim.pdf, page is rotated 90 degr
+ees> <./P.pdf, page is rotated 90 degrees>] [15] [16]
+REFERENCES
+[17
+
+] (./note.aux) ) 
 Here is how much of TeX's memory you used:
- 4927 strings out of 493089
- 71301 string characters out of 6134842
- 152446 words of memory out of 5000000
- 8155 multiletter control sequences out of 15000+600000
- 12444 words of font info for 48 fonts, out of 8000000 for 9000
+ 4959 strings out of 493089
+ 71614 string characters out of 6134842
+ 152525 words of memory out of 5000000
+ 8183 multiletter control sequences out of 15000+600000
+ 13691 words of font info for 53 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  59i,11n,94p,922b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on note.pdf (13 pages, 332360 bytes).
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.
+pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on note.pdf (18 pages, 504699 bytes).
 PDF statistics:
- 297 PDF objects out of 1000 (max. 8388607)
- 158 compressed objects within 2 object streams
+ 497 PDF objects out of 1000 (max. 8388607)
+ 246 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
