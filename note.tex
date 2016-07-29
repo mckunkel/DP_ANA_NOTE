@@ -6,6 +6,7 @@
 \usepackage[export]{adjustbox}
 \usepackage{cite}
 \usepackage{subcaption}
+\usepackage{amsmath}
 \renewcommand{\baselinestretch}{1.5}
 \parskip10pt
 \topmargin10mm
@@ -30,11 +31,6 @@
 \DeclareMathOperator{\arsh}{arcsinh}
 \DeclareMathOperator{\diam}{diam}
 \DeclareMathOperator{\card}{card}
-
-\newcommand{\be}{\begin{equation}}
-\newcommand{\ee}{\end{equation}}
-\newcommand{\bea}{\begin{eqnarray}}
-\newcommand{\eea}{\end{eqnarray}}
 
 \newcommand{\itemref}[1]{\ref{#1}}
 \newcommand{\abs}[1]{\lvert #1\rvert}
@@ -93,30 +89,43 @@
 %%%%%%%%%%% section 1 %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
-In this note we will explain the analysis details to obtain the Dalitz plot parameters of the decay of $\eta^{\prime}$ $\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$
-meson. The final state particles proton, $\pi^{+}$ and $\pi^{-}$ information from PART BOS bank are identified with the particle identification codes compiled in the ``clas6-trunk" under the package CLASEVENT . We selected a data sample with all those events which has only one proton, $\pi^{+}$ and $\pi^{-}$ in their final state and no matter how many neutral particles. 
 
+The present work aims to report the Dalitz plot parameters for $\eta^{\prime}$ $\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$ decay. The three body decay of a meson has two degrees of freedom, so one can define a Dalitz plot with two variables X and Y for $\eta^{\prime}$ $\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$ decay, which is defined as follows:
 
-We started the analysis with well calibrated data as ".root" files with all events arranged as per the Run number, Event number and PID along with all other informations recorded by the experiment. The calibrated data is then corrected and further processed following the steps of `` g12 procedures working version.pdf " and properly tuned Kinematic Fitter available at G12 Wikki ~\cite{G12_AN}. We have divided our analysis into the following subsequent sections.
+\begin{eqnarray}
+X&=&\frac{\sqrt{3}(T_{\pi^{+}} -T_{\pi^{-}})}{Q} \\ 
+Y&=&\frac{(m_{\eta}+2m_{\pi})}{m_{\pi} }\cdot \frac{T_{\eta}}{Q} - 1.
+\end{eqnarray}
 
-\begin {itemize}
-\item Event Selection : The Section 2 will cover analysis cut involved to tap the events of interest.
-\item Simulation : The Section 3 will explain our analysis model and will produce a cross check to the whole analysis
-\item Result : The Section 4 will report the final results of the measurement with a study of systematics.  
-\end {itemize}
-The complete reaction under study is `` $\gamma$ p $\rightarrow$ $\eta^{\prime}$($\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$) p " and we do not detect $\eta$ meson. This is a missing mass analysis using a fixed target g12 experiment, which has an energy of the photon beam ranging from 1.142 GeV to  5.425 GeV. However the threshold production of $\eta^{\prime}$ meson is 1.455 GeV and hence we analysed the data from the threshold to our maximum available energy. 
+Where $T_{\eta}$, $T_{\pi^{+}}$ and $T_{\pi^{-}}$ are the kinetic energy of a given particles $\eta$, $\pi^{+}$ and $\pi^{-}$ respectively in the rest frame of $\eta^{\prime}$ and Q = $T_{\pi^{+}}$+$T_{\pi^{-}}$+$T_{\eta}$. The $m_{\eta}$ and $m_{\pi}$ are the mass of  $\eta$ and $\pi$ mesons respectively. 
 
+\begin{figure}[ht!]
+\centerline{
+\includegraphics[width=12cm,height=8cm]{dalitzEtaPrime.pdf}}
+\caption{Dalitz variable X vs Y for $\eta^{\prime}$ $\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$.}
+\label{DP}
+\end{figure}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%% section 2 %%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Event Selection}
+The general parametization function in Equation.~\ref{par} is used to fit a Dalitz plot. The square of the decay amplitude,
+ \begin{equation}
+M^{2}=A(1+aY+bY^{2}+cX+dX^{2}).
+\label{par}
+\end{equation}
+Where a, b, c, and d are the Dalitz plot parameters of the decay and A is the normalization constant.
 
-We are interested in the photo-production of $\eta^{\prime}$ meson and its decay to $\eta$, $\pi^{+}$ and $\pi^{-}$ mesons.  The improvement in the identification of the particles, selection of an event and several cuts in the analysis to tap the events of interest is reported subsequent sub sections.
+The Dalitz plot(DP) provides pure kinematic information of a three body decay and also helps to understand the correct input to theoretical distribution of the effective chiral Lagrangian. A Dalitz plot study for the $\eta^{\prime}$ meson for the $\eta$ $\pi^{+}$ $\pi^{-}$  decay channel will help to study effective chiral perturbation theory at a low Q limit.
 
+The VES Collaboration has reported the Dalitz plot parameters of $\eta^{\prime}$ $\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$ with 14.6 x $10^{3}$ events in charge exchange and 7 x $10^{3}$ events in diffraction like production ~\cite{Dorofeev:2006fb}. The BESIII Collaboration has also reported $\eta^{\prime}$ $\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$ decay parameters with 43826 ± 211 events with better precision~\cite{Ablikim:2010kp}. The two measurements has disagreement among them and also to the theoretical calculation of the parameters ~\cite{Borasoy:2005du}. 
 
+In this note the Dalitz plot parameters of $\eta^{\prime}$ $\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$ is studied with CLAS g12 data set, which has the competitive statistics to study the parameters with low statistical errors. It is yet another independent measurement with different systematic errors to cross-check the parameters.
+
+\section {G12 Data Set}
+
+The g12 experiment ran during March - June 2008 with 26 x $10^{9}$ recorded production triggers ~\cite{G12_AN}.  The fixed target g12 experiment, has an energy of the photon beam ranging from 1.142 GeV to  5.425 GeV. However the threshold production of $\eta^{\prime}$ meson is 1.455 GeV and hence the analysis will report the parameters from the threshold to the maximum available energy. The analysis starts with well calibrated data in ".root" format with all events arranged as per the Run number, Event number and PID along with all other informations recorded by the experiment. The final state particles proton, $\pi^{+}$ and $\pi^{-}$ information were extracted from the PART BOS bank and identified using particle identification codes compiled in the ``clas6-trunk" under the package CLASEVENT . The skim were so selected that all events has only one proton, $\pi^{+}$ and $\pi^{-}$ and any number of neutral particles. 
+The complete reaction under study is `` $\gamma$ p $\rightarrow$ $\eta^{\prime}$($\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$) p " and the $\eta$ meson is detected via the missing mass technique. 
 
 \subsection{Run List}
+The g12 experiment recorded 626 production runs, 37 single-prong runs and 3 special calibration runs. The Table.~\ref{RunList} shows the list of runs used in the analysis.
 
 \begin{longtable}{|c|c|c|c|c|}
 \caption{List of runs included in the analysis}\\
@@ -215,12 +224,53 @@ G12 Run List &G12 Run List & G12 Run List & G12 Run List & G12 Run List \\
 57307&57308&57309&57310&57311\\ 
 57317&57308&57309&57310&57311\\ 
 \hline
+\label{RunList}
 \end{longtable}
+
+
+The whole analysis is divided into following sections.
+\begin {itemize}
+\item Simulation 
+\item Event Selection 
+\item Result 
+\item Systematics Study
+\end {itemize}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% section 3 %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Simulation}
+\label{Sim}
+PLUTO++, an event generator is used for this analysis. It uses ROOT based programmes and it is very commonly used in Hadron Physics experiments to generate hadronic production and decay of mesons. It gives user the freedom to include physics models with simple C++ based codes and to obtain outputs in any desired format. The simulated events in the analysis are modelled with bremsstrahlung photon, differential cross-section of $\eta^{\prime}$ and Dalitz plot parameters of $\eta^{\prime}$ $\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$ decay. The output of the PLUTO++ program are extracted in standard CLAS ``gamp" file and then processed with CLAS simulation suit in the following way :
+
+\begin {itemize}
+\item The gamp files are first converted into the format of PART bank containing the event.
+\item GSIM:  Geant3-based simulation in CLAS simulates the decay tracks of particles through the simulation and finally the digitized informations is sorted in the simulated ``raw" banks.
+\item GPP: GSIM post-processor smears detector signal more accurately to reflect the actual resolution and to simulate the experimental conditions.  
+\item a1c : It is used for reconstruction of simulated data and is the same program used during data reconstruction.
+\end {itemize}
+
+
+
+\section{Event Selection}
+
+This section explains the procedure to improve the identification of the particles, corrections to the event and cuts to the analysis. 
 
 \subsection{Selection of the Beam Photon}
 
-In an event we found that multiple bremsstrahlung photons were recorded as the incident beam. The multiple beam photon arises from 2.004 beam bunching spacing of the electrons in the storage ring. These electrons gives the bremsstrahlung photons in the radiator and creates multiple hits in the trigger and thereby satisfying trigger logic to record them. In this analysis we selected all the  photons which falls within the timing window of $\mid$Tagger Time - StartTime$\mid$ $\leq$ 1.002 ns, and consider each of them as an individual event.
+A typical g12 data event has multiple bremsstrahlung photons recorded as the incident beam. The multiple beam photon arises from 2.004 beam bunching spacing of the electrons in the storage ring. These electrons gives the bremsstrahlung photons in the radiator and creates multiple hits in the trigger and thereby satisfying trigger logic to record them. All the  photons which falls within the timing window of $\mid$Tagger Time - StartTime$\mid$ $\leq$ 1.002 ns are considered as an individual event.
 
+\subsection{G12 Corrections}
+\label{Cor}
+The G12 Corrections were derived from the exclusive $\pi^{+}$, $\pi^{-}$ and proton reaction. We used the following corrections in the analysis ~\cite{G12_AN}:
+    
+\begin {itemize}
+\item Beam Energy Correction : Is a correction to the incident beam photon energy and dependent on the Run number of the event. This correction is only applicable data and not to the simulated events.
+\item Removal of bad TOF paddle : This correction takes the Sector number and Paddle number as input. We used the correction to remove only those paddles that shows a significant drift on the resolutions of particle.   
+\item  Geometric Fiducial Cut : This cut removes the dead part of the detector from the $\theta-\phi$ map of the particle. We used it with the "nominal" option. 
+\end {itemize}
 
 \subsection{Vetex Cut}
 \label{VCut}
@@ -256,22 +306,15 @@ The difference of the $t_{vert}(TOF)$ from $t_{vert}(Tagger)$ is shown in Fig.$~
 \label{Fig2}
 \end{figure}
 
-
-\section{G12 Corrections}
-\label{Cor}
-The G12 Corrections were derived from the exclusive $\pi^{+}$, $\pi^{-}$ and proton reaction. We used the following corrections in the analysis ~\cite{G12_AN}:
-    
-\begin {itemize}
-\item Beam Energy Correction : Is a correction to the incident beam photon energy and dependent on the Run number of the event. This correction is only applicable data and not to the simulated events.
-\item Removal of bad TOF paddle : This correction takes the Sector number and Paddle number as input. We used the correction to remove only those paddles that shows a significant drift on the resolutions of particle.   
-\item  Geometric Fiducial Cut : This cut removes the dead part of the detector from the $\theta-\phi$ map of the particle. We used it with the "nominal" option. 
-\end {itemize}
+\subsection{$\mid$ $\cos\theta_{center-of-mass}$ of $\eta^{\prime}$ $\mid$ $\leq$ 0.85 Cut}
+\label{Cos}
+The events are generated with the differential cross sections of $\eta^{\prime}$ from the g11 measurement ~\cite{Williams:2009yj} within a $\mid$ $\cos\theta_{center-of-mass}$ of $\eta^{\prime}$ $\mid$ $\leq$ 0.85. The earlier measurement of CLAS g11 has reported the differential cross sections in $\mid$ $\cos\theta_{center-of-mass}$ of $\eta^{\prime}$ $\mid$ $\leq$ 0.85 window as the yield drops near to the beam pipe and hence this region is removed from the analysis. 
 
 \subsection{Kinematic Fitting}
 \label{KF}
 Kinematic fitter is a useful tool often used to get rid of unwanted background from signal channels and helps to improve the signal to background ratio.  Any measurement with a tool comes with an error, and it can be represented as a vector  $\vec{\eta}$. We can also define the measurement as 
 \\ $\vec{\eta}$ =  $\vec{y}$. +  $\vec{\epsilon}$.\\
-Where the $\vec{y}$ and $\vec{\epsilon}$ denotes the actual value of the measurement without error and $\vec{\epsilon}$ is the error associated with the measurement. The kinematic information of a physics channel along with the constrains imposed allows the fitter to calculate the probability and $\chi^{2}$ of each event using Lagrange multipliers to perform a least-squares fit. The CLAS g12 Kinematic fitter takes the ``TBER (Track Based Error)" matrix, vertex of information and lorentzvector of all particles as input, and returns Pull probabilities and $\chi^{2}$ for each events. The Pull probabilities when fitted with Guassian, its mean and $\sigma$ decides the quality of the covariance matrix and kinematic fit. In the ideal case of gaussian fitted to the Pulls of the particles should have  zero mean and $\sigma$ of one, which ensures that the fitter correctly calculates covariance matrix error. 
+Where the $\vec{y}$ and $\vec{\epsilon}$ denotes the actual value of the measurement without error and $\vec{\epsilon}$ is the error associated with the measurement. The kinematic information of a physics channel along with the constrains imposed allows the fitter to calculate the probability and $\chi^{2}$ of each event using Lagrange multipliers to perform a least-squares fit. The CLAS g12 Kinematic fitter takes the ``TBER (Track Based Error)" matrix, vertex of information and four-momentum of all particles as input, and returns Pull probabilities and $\chi^{2}$ for each events. The Pull probabilities when fitted with Guassian, its mean and $\sigma$ decides the quality of the covariance matrix and kinematic fit. In the ideal case of gaussian fitted to the Pulls of the particles should have  zero mean and $\sigma$ of one, which ensures that the fitter correctly calculates covariance matrix error. 
   
 \begin{figure}[ht!]
 \centerline{
@@ -293,7 +336,7 @@ The CLAS g12 Kinematic fitter is tuned for 4C constrained reaction,
 \gamma p \rightarrow \pi^{+} \pi^{-} p.
 \end{eqnarray*}\\
 \noindent
-The tuning were done for $\pi^{+}$ $\pi^{-}$ and p individually. To check the quality of covariance matrix we have shown the tuned pulls of the particles $\pi^{+}$, $\pi^{-}$ and p from the reaction hypothesis for the data with run 56655 and simulation after a 1$\%$ pull probability cut. The mean and sigma from of the particles are listed in the Table.~\ref{tab2}.
+The tuning were done for $\pi^{+}$ $\pi^{-}$ and p individually. To check the quality of covariance matrix the mean and sigma of the tuned pulls of the particles $\pi^{+}$, $\pi^{-}$ and p from the reaction hypothesis for the data with run 56655 and simulation after a 1$\%$ pull probability cut is listed in the Table.~\ref{tab2}.
 
 \begin{table}
 \centering
@@ -358,7 +401,9 @@ $\gamma$ E-pull                           & -0.312 & 1.092  \\
 \label{tab2}
 \end{table}
 
-\subsubsection{Fit to the Analysis}
+
+
+\subsubsection{Kinematic Fit to the Analysis}
 	
 \begin{figure}[ht!]
 \centerline{
@@ -367,25 +412,15 @@ $\gamma$ E-pull                           & -0.312 & 1.092  \\
 \label{Fig5}
 \end{figure} 
 
-	We use the tuned Kinematic fitter for the 4C constrained fit described above to the reaction hypothesis for our channel 
+The tuned Kinematic fitter for the 4C constrained fit is again used for the channel below
 \begin{eqnarray*}
-\gamma p \rightarrow (\eta)_{Missing} \pi^{+} \pi^{-} p.
+\gamma p \rightarrow (\eta)_{Missing} \pi^{+} \pi^{-} p. (1-C)
 \end{eqnarray*}\\	
- We required the $M_{x}$(p$\pi^{+}$$\pi^{-}$) has to be an $\eta$ meson. Our reaction hypothesis has the same set of final state particles as for the tuned channel, hence we can comfortably use it without tuning it for our reaction hypothesis again. The Pull probability for the channel of our interest is shown in Fig.~\ref{Fig5} and the dotted line at 0.01 shows the 1$\%$ Pull probability cut to reject events. 
+ The 1-C constrained fit requires the four-momentum [beam] + [target] - ( [$\pi^{+}$] [$\pi^{-}$] [p]) to be an [$\eta$] meson. The reaction hypothesis has the same set of final state particles as for the tuned channel, hence one can comfortably use it without tuning it for our reaction hypothesis again. The Pull probability for the channel is shown in Fig.~\ref{Fig5} and the dotted line at 0.01 shows the 1$\%$ Pull probability cut to reject events. 
  
+\subsection{Result}
 
- 
-\subsection{Simulation}
-Pluto, an event generator is used for this analysis. Pluto uses ROOT based programmes very commonly used in Hadron Physics experiments to generate hadronic production and decay. It gives user the freedom to include physics models with simple C++ based codes and to obtain outputs in any desired format. Our simulated events are modelled with bremsstrahlung photon, differential cross-section of $\eta^{\prime}$ and Dalitz plot parameters of $\eta^{\prime}$ $\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$ decay. We took the output of the PLUTO program in standared CLAS ``gamp" file and processed it with CLAS simulation suit :
-
-\begin {itemize}
-\item The gamp files are first converted into the format of PART bank containing the event.
-\item GSIM:  Geant3-based simulation in CLAS simulates the decay tracks of particles through the simulation and finally the digitized informations is sorted in the simulated ``raw" banks.
-\item GPP: GSIM post-processor smears detector signal more accurately to reflect the actual resolution and to simulate the experimental conditions.  
-\item a1c : It is used for reconstruction of simulated data and is the same program used during data reconstruction.
-\end {itemize}
-
-The simulated events are then passed through same conditions of Section.~\ref{VCut}, Section.~\ref{TCut}, Section.~\ref{Cor} and Section.~\ref{KF}. The number of the events rejected in both the simulation and data after the cuts is shown in a Table.~\ref{tab3}. 
+The simulated events and g12 data are passed all selection and cuts described in  Section.~\ref{Cor}, Section.~\ref{VCut}, Section.~\ref{TCut}, Section.~\ref{Cos} and Section.~\ref{KF}. The number of the events rejected in both the simulation and data after the cuts is shown in a Table.~\ref{tab3}. 
   
 \begin{table}[]
 \centering
@@ -406,12 +441,11 @@ Prob(($\eta$)$\pi^{+}$$\pi^{-}$p) \textgreater 0.01                & 1901       
 \label{tab3}
 \end{table}
  
- 
-The events are generated with the differential cross sections of $\eta^{\prime}$ from the g11 measurement ~\cite{Williams:2009yj} within a $\mid$ $\cos\theta_{center-of-mass}$ of $\eta^{\prime}$ $\mid$ $\leq$ 0.85. The earlier measurement of CLAS g11 has reported the differential cross sections in $\mid$ $\cos\theta_{center-of-mass}$ of $\eta^{\prime}$ $\mid$ $\leq$ 0.85 window as the yield drops near to the beam pipe and hence this region is removed from the analysis. The generated events also has the input Dalitz plot parameters from BESIII measurement~\cite{Ablikim:2010kp}. A comparison of the kinematic variables of the center-of-mass energy ($\sqrt{s}$) and momentum (P), $\theta$ and $\phi$ for $\pi^{+}$ $\pi^{-}$ and p is shown in the Figure.~\ref{fig6}, ~\ref{fig7}, ~\ref{fig8} $\&$ ~\ref{fig9} from the simulated events and the g12 data.
+ In an attempt to see how well the simulation explains the g12 data a comparison of the kinematic variables of the center-of-mass energy ($\sqrt{s}$) and momentum (P), $\theta$ and $\phi$ for $\pi^{+}$ $\pi^{-}$ and p is shown in the Figure.~\ref{fig6}, ~\ref{fig7}, ~\ref{fig8} $\&$ ~\ref{fig9}. The events in the Monte Carlo are generated with the model explained in Section.~\ref{Sim} with the input Dalitz plot parameters from BESIII measurement~\cite{Ablikim:2010kp}.
 
 \begin{figure}[ht!]
 \centerline{
-\includegraphics[width=10cm,height=4cm]{w.pdf}}
+\includegraphics[width=10cm,height=6cm]{w.pdf}}
 \caption{Comparison of incident photon beam in center of mass energy ($\sqrt{s}$) with simulated (blue) events and g12 data (black) when generating Monte-Carlo with the differential cross-sections and Dalitz plot parameters.}
 \label{fig6}
 \end{figure}
@@ -437,15 +471,8 @@ The events are generated with the differential cross sections of $\eta^{\prime}$
 \label{fig9}
 \end{figure}
  
- \section{Dalitz plot of $\eta^{\prime}$ $\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$}
- The three body decay of a meson has two degrees of freedom.  So we can define a scatter plot with two Dalitz plot variables X and Y for $\eta^{\prime}$ $\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$ decay, which is defined as follows:
-
-\begin{eqnarray}
-X&=&\frac{\sqrt{3}(T_{\pi^{+}} -T_{\pi^{-}})}{Q} \\ 
-Y&=&\frac{(m_{\eta}+2m_{\pi})}{m_{\pi} }\cdot \frac{T_{\eta}}{Q} - 1.
-\end{eqnarray}
-
-Where $T_{\eta}$, $T_{\pi^{+}}$ and $T_{\pi^{-}}$ are the kinetic energy of a given particles $\eta$, $\pi^{+}$ and $\pi^{-}$ respectively in the rest frame of $\eta^{\prime}$ and Q = $T_{\pi^{+}}$+$T_{\pi^{-}}$+$T_{\eta}$. The $m_{\eta}$ and $m_{\pi}$ are the mass of  $\eta$ and $\pi$ mesons respectively. 
+ 
+ \subsection{Background subtraction to the Dalitz plot}
 
 One can also define the boundary of the $\eta^{\prime}$ $\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$ decay from the fact that the addition three momenta of particles $\vec{P}_{\eta}$, $\vec{P}_{\pi+}$ and $\vec{P}_{\pi-}$ for $\eta$, $\pi^{+}$ and $\pi^{-}$ respectively is 0 in the rest frame of $\eta^{\prime}$.
 \begin{eqnarray*}
@@ -457,30 +484,93 @@ Squaring and equating the side gives us the boundary Equation.~\ref{bd} of the $
 \label{bd}
 \end{eqnarray}
 
+%FIGURE DP WITHOUT BACKGROUND SUBTRACTION
+
+The aim is now to obtain a bin-wise background subtracted Dalitz plot. In order to achieve that all the events are feed into a X and Y (nbin x nbin) Dalitz plot and a bin-wise background subtraction is performed to the $M_{x}$(p) distribution after restricting 0.537 $\leq$ $M_{x}$(p$\pi{+}$$\pi{-}$) $\leq$ 0.557. The signal in $M_{x}$(p) distribution is fitted with a Voigt function and background is fitted with a Polynomial of order 3 in each bin of the Dalitz plot to subtract the non-resonant contribution.
+
+%FIGURE DP AFTER BACKGROUND SUBTRACTION
+ 
+One can also translate the 2D Dalitz plot bins of X and Y with a global bin number given by:
+\begin{eqnarray*}
+Globalbin(X,Y) = 
+Floor \big[ \frac{X + X_{max}}{\delta} \big] + N_{bins} . Floor \big[ \frac{Y + Y_{max}}{\delta} \big] + 1
+\label{gb}
+\end{eqnarray*}
+where X and Y are the central values of the current bin, $X_{max}$ and $Y_{max}$ are the maximum values the axis X and Y respectively, which is chosen to be 1.5. The $N_{bins}$ are the number of bins chosen along X and Y axis and it is 15 here. A translation of the Dalitz plot to its Global bin number along with the boundary of the decay from Equation.~\ref{bd} is shown in Figure.~\ref{fig10}.
+
+%FIGURE OF DP WITH GLOBAL BIN
+%FIGURE OF DATA DP WITH GLOBAL BIN
+ 
+\begin{figure}[ht!]
+\centerline{
+\includegraphics[width=14cm,height=8cm]{gb.pdf}}
+\caption{The 15 x 15 Dalitz plot shows the translation X and Y Dalitz plot bins in global binning and the red curve shows the phase space boundary of the decay. }
+\label{fig10}
+\end{figure} 
+
+ %FIGURE WITH 1D DP
+
+\subsection{Calculation of acceptance with smearing matrix}
+
+The CLAS detector has a different acceptance of proton, $\pi^{+}$ and $\pi^{-}$ and the acceptance varies within the phasespace of the  $\eta^{\prime}$ $\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$ decay. Hence the migration of events in different bins within the phasespace is also non-uniform, so one must take special care of migration of events from one bin to the other. To take care of the migration of the events,  an acceptance with smearing matrix ($\epsilon_{n,m}$) is presented here. The events are generated in each bin of the Dalitz plot and the acceptance for all the bins including the migrated bins are calculated. For events generated in the $j^{th}$ bin, the acceptance is calculated for all $i^{th}$ Dalitz plot bins as shown below :
+\begin{eqnarray}
+\epsilon_{i,j} = \frac{N_{rec,gen}(i,j)}{N_{gen}(j)}
+\end{eqnarray}
+Where $N_{rec,gen}$(i,j) denotes the number of events reconstructed in $i^{th}$ bin when generated events in the $j^{th}$ bin only.
+
+
 \subsection{Fit to the Dalitz Plot }
 
-Once we the $\eta^{\prime}$ $\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$ events filled in each bin of Dalitz plot. We fit the Dalitz plot with the general parametization function in Equation.~\ref{par}. The square of the decay amplitude,
+Once the $\eta^{\prime}$ $\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$ events from data is filled in each bin of Dalitz plot. We fit the Dalitz plot with the general parametization function in Equation.~\ref{par}. The square of the decay amplitude,
  \begin{equation}
 M^{2}=A(1+aY+bY^{2}+cX+dX^{2}).
 \label{par}
 \end{equation}
 Where a, b, c, and d are the Dalitz plot parameters of the decay and A is the normalization constant.
 
-
-The fitting is performed using the least square fitting procedure and MINUIT available in ROOT, which minimises the $\chi^{2}$ using Equation.~\ref{chi} in each bin of the Dalitz plot.
+The fitting is performed with least square fitting procedure using MINUIT available in ROOT, which minimises the $\chi^{2}$ using Equation.~\ref{chi} in each bin of the Dalitz plot.
 \begin{eqnarray}
-\chi^{2} = \sum_{n=1}^{Nbins} \Bigg( \frac{N_{n} - \sum_{m=1}^{Nbins} \epsilon_{n,m} N_{theory,m}} {\sigma_{n}}   \Bigg)^{2}
+\chi^{2} = \sum_{i=1}^{Nbins} \Bigg( \frac{N_{i} - \sum_{j=1}^{Nbins} \epsilon_{i,j} N_{theory,j}} {\sigma_{i}}   \Bigg)^{2}
 \label{chi}
 \end{eqnarray}
 Where,
 \begin {itemize}
-\item The $N_{n}$ is number of $\eta^{\prime}$ $\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$ events in the $n^{th}$ Dalitz plot bin.
-\item $\epsilon_{n,m}$ is acceptance with smearing matrix, ie.  it gives acceptance of $m^{th}$ bin when events are generated in the n$^{th}$ bin only.
-\item $N_{theory,m}$ = $\int_{Boundary}$ A(1 + aY + b$Y^{2}$ + cX + d $X^{2}$) dX dY. 
-\item $\sigma_{n}$ is the error associated with $n^{th}$ DP bin.
+\item The $N_{i}$ is number of $\eta^{\prime}$ $\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$ events in the $i^{th}$ Dalitz plot bin.
+\item $\epsilon_{i,j}$ is acceptance with smearing matrix, ie.  it gives acceptance of $j^{th}$ bin when events are generated in the i$^{th}$ bin only.
+\item $N_{theory,j}$ = $\int_{Boundary}$ A(1 + aY + b$Y^{2}$ + cX + d $X^{2}$) dX dY. 
+\item $\sigma_{i}$ is the error associated with $i^{th}$ DP bin.
 \end {itemize}
 
+\subsubsection{Phase Space Integrals}
 
+To calculate the integral in Equation.~\ref{Pi}, the Monte Carlo integration used within the boundary of the Dalitz plot. 
+\begin{eqnarray}
+N_{theory,j} = \int_{Boundary} A(1 + aY + b Y^{2} + cX + d X^{2}) dX dY
+\label{Pi}
+\end{eqnarray}
+\begin{eqnarray*}
+\begin{split}
+N_{theory,j} = A \int_{Boundary} dX dY + A a \int_{Boundary} Y dX dY 
++ A b \int_{Boundary} Y^{2} dX dY \\ + A c \int_{Boundary} X dX dY 
++ A d \int_{Boundary} X^{2} dX dY 
+\end{split}
+\end{eqnarray*}
+\begin{eqnarray*}
+N_{theory,j} = A ( \alpha_{1} + a \alpha_{2} + b \alpha_{3} + c \alpha_{4} + d \alpha_{5})
+\end{eqnarray*}
+\noindent
+Where,  
+\\ $\alpha_{1}$ = \int_{Boundary} dX dY
+\\ $\alpha_{2}$ = \int_{Boundary} Y dX dY
+\\ $\alpha_{3}$ = \int_{Boundary} Y^{2} dX dY
+\\ $\alpha_{4}$ = \int_{Boundary} X dX dY
+\\ $\alpha_{5}$ = \int_{Boundary} X^{2} dX dY
+
+The aim here is to evaluate the integral $ \alpha_{1}$, \alpha_{2}$, \alpha_{3}$, \alpha_{4}$ and \alpha_{5}$. The uniform random number pair, as Dalitz variable X and Y are generated within -1.5 to 1.5 for both using random number generator in ROOT and saved in a binned two dimensional histogram. If the generated pair lie inside the kinematic boundary of decay then the one binned two dimensional histogram for each integral is filled, where the integrand being the weight of the histogram.
+For instance:  histogram for integral $\alpha_{1}$ is assigned a weight of 1, histogram for integral $\alpha_{2}$ is assigned a weight of Y, integral $\alpha_{3}$ is assigned a weight of $Y^{2}$ so on and so forth. These histograms for each integral is then divided by the generated histogram and multiplied by the bin size to give the value of integration inside the Dalitz plot for each bin. It can be later translated into the global binning and used directly in the Equation.~\ref{chi}.
+
+
+  
 
 %\begin {itemize}
 %item I am sudeep
@@ -495,6 +585,21 @@ Where,
  
 \begin{thebibliography}{1}
 
+%\cite{Dorofeev:2006fb}
+\bibitem{Dorofeev:2006fb} 
+  V.~Dorofeev {\it et al.},
+   Phys.\ Lett.\ B {\bf 651}, 22 (2007)
+   
+\bibitem{Ablikim:2010kp} 
+M.~Ablikim {\it et al.} [BESIII Collaboration],
+Phys.\ Rev.\ D {\bf 83}, 012003 (2011)
+   
+%\cite{Borasoy:2005du}
+\bibitem{Borasoy:2005du} 
+  B.~Borasoy and R.~Nissler,
+  %``Hadronic eta and eta-prime decays,''
+  Eur.\ Phys.\ J.\ A {\bf 26}, 383 (2005)
+     
 \bibitem{G12_AN} 
  Z. Akbar et al. g12 Analysis Procedures, Statistics and Systematics. Technical report, CLAS Technical Note, 2016.
 
@@ -503,9 +608,8 @@ Where,
   %``Differential cross s ections for the reactions gamma p ---> p eta and gamma p ---> p eta-prime,''
   Phys.\ Rev.\ C {\bf 80}, 045213 (2009)
 
+\bibitem{Caldeira} 
+Li Caldeira Balkeståhl, Measurement of the Dalitz Plot Distribution for $\eta$ $\rightarrow$ $\pi^{+}$ $\pi^{-}$ $\pi^{0}$ with KLOE, PhD thesis Uppsala University 2016. 
 
-\bibitem{Ablikim:2010kp} 
-  M.~Ablikim {\it et al.} [BESIII Collaboration],
-   Phys.\ Rev.\ D {\bf 83}, 012003 (2011)
 \end{thebibliography}
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.4)  20 JUL 2016 14:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.4)  29 JUL 2016 17:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -264,26 +264,30 @@ Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 \c@theorem=\count111
 
-(./note.aux)
+(./note.aux
+
+LaTeX Warning: Label `par' multiply defined.
+
+)
 \openout1 = `note.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Try loading font information for U+msa on input line 79.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Try loading font information for U+msa on input line 75.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 79.
+LaTeX Font Info:    Try loading font information for U+msb on input line 75.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -353,120 +357,254 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
 (./title.tex) [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdft
-ex.map}]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ex.map}] <dalitzEtaPrime.pdf, id=12, 569.12625pt x 385.44pt>
+File: dalitzEtaPrime.pdf Graphic file (type pdf)
 
- [1]
-[2] [3] [4] <vertex.pdf, id=26, 569.12625pt x 632.3625pt>
+<use dalitzEtaPrime.pdf>
+Package pdftex.def Info: dalitzEtaPrime.pdf used on input line 104.
+(pdftex.def)             Requested size: 341.44365pt x 227.61935pt.
+ [1 <./dalitzEtaPrime.pdf>]
+Missing character: There is no ± in font cmr12!
+ [2] [3] [4] [5] [6]
+[7] <vertex.pdf, id=46, 569.12625pt x 632.3625pt>
 File: vertex.pdf Graphic file (type pdf)
  <use vertex.pdf>
-Package pdftex.def Info: vertex.pdf used on input line 231.
+Package pdftex.def Info: vertex.pdf used on input line 281.
 (pdftex.def)             Requested size: 377.25711pt x 419.16621pt.
-
-[5]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6 <./vertex.pdf>] <timing.pdf, id=79, 569.12625pt x 630.355pt>
+ [8]
+<timing.pdf, id=51, 569.12625pt x 630.355pt>
 File: timing.pdf Graphic file (type pdf)
  <use timing.pdf>
-Package pdftex.def Info: timing.pdf used on input line 254.
+Package pdftex.def Info: timing.pdf used on input line 304.
 (pdftex.def)             Requested size: 378.45552pt x 419.16621pt.
- [7]
-[8 <./timing.pdf>] <Pulls_nothing.pdf, id=129, 569.12625pt x 295.1025pt>
-File: Pulls_nothing.pdf Graphic file (type pdf)
 
-<use Pulls_nothing.pdf>
-Package pdftex.def Info: Pulls_nothing.pdf used on input line 278.
+Underfull \vbox (badness 6792) has occurred while \output is active []
+
+ [9 <./vertex.pdf>] [10 <./timing.pdf>]
+<Pulls_nothing.pdf, id=144, 569.12625pt x 295.1025pt>
+File: Pulls_nothing.pdf Graphic file (type pdf)
+ <use Pulls_nothing.pdf>
+Package pdftex.def Info: Pulls_nothing.pdf used on input line 321.
 (pdftex.def)             Requested size: 341.44365pt x 284.53346pt.
 
-<SIM_Pulls_nothing.pdf, id=130, 569.12625pt x 382.42876pt>
+<SIM_Pulls_nothing.pdf, id=145, 569.12625pt x 382.42876pt>
 File: SIM_Pulls_nothing.pdf Graphic file (type pdf)
 
 <use SIM_Pulls_nothing.pdf>
-Package pdftex.def Info: SIM_Pulls_nothing.pdf used on input line 285.
+Package pdftex.def Info: SIM_Pulls_nothing.pdf used on input line 328.
 (pdftex.def)             Requested size: 341.44365pt x 284.53922pt.
- [9 <./Pulls_nothing.pdf, page is rotated 90 degrees>] <Prob_etafit.pdf, id=177
-, 569.12625pt x 295.1025pt>
+
+<Prob_etafit.pdf, id=146, 569.12625pt x 295.1025pt>
 File: Prob_etafit.pdf Graphic file (type pdf)
  <use Prob_etafit.pdf>
-Package pdftex.def Info: Prob_etafit.pdf used on input line 365.
+Package pdftex.def Info: Prob_etafit.pdf used on input line 410.
 (pdftex.def)             Requested size: 341.44365pt x 227.62587pt.
 
-[10 <./SIM_Pulls_nothing.pdf, page is rotated 90 degrees>] [11]
+[11]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 390.
+               Default added (so using `tbp') on input line 425.
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 402.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 437.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 402.
- [12 <./Prob_etafit.pdf, page is rotated 90 degrees>] <w.pdf, id=257, 569.12625
-pt x 273.02pt>
-File: w.pdf Graphic file (type pdf)
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 437.
 
-<use w.pdf>
-Package pdftex.def Info: w.pdf used on input line 414.
-(pdftex.def)             Requested size: 284.53638pt x 113.80943pt.
- <Pip.pdf, id=258, 569.12625pt x 273.02pt>
+Underfull \vbox (badness 7468) has occurred while \output is active []
+
+ [12 <./Pulls_nothing.pdf, page is rotated 90 degrees>]
+<w.pdf, id=198, 569.12625pt x 273.02pt>
+File: w.pdf Graphic file (type pdf)
+ <use w.pdf>
+Package pdftex.def Info: w.pdf used on input line 448.
+(pdftex.def)             Requested size: 284.53638pt x 170.71623pt.
+
+<Pip.pdf, id=199, 569.12625pt x 273.02pt>
 File: Pip.pdf Graphic file (type pdf)
  <use Pip.pdf>
-Package pdftex.def Info: Pip.pdf used on input line 421.
+Package pdftex.def Info: Pip.pdf used on input line 455.
 (pdftex.def)             Requested size: 398.3596pt x 113.80943pt.
 
-<Pim.pdf, id=259, 569.12625pt x 273.02pt>
+<Pim.pdf, id=200, 569.12625pt x 273.02pt>
 File: Pim.pdf Graphic file (type pdf)
  <use Pim.pdf>
-Package pdftex.def Info: Pim.pdf used on input line 428.
+Package pdftex.def Info: Pim.pdf used on input line 462.
 (pdftex.def)             Requested size: 398.3596pt x 113.80943pt.
 
-<P.pdf, id=260, 569.12625pt x 273.02pt>
+<P.pdf, id=201, 569.12625pt x 273.02pt>
 File: P.pdf Graphic file (type pdf)
  <use P.pdf>
-Package pdftex.def Info: P.pdf used on input line 435.
+Package pdftex.def Info: P.pdf used on input line 469.
 (pdftex.def)             Requested size: 398.3596pt x 113.80943pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13 <./w.pdf, page is rotated 90 degrees>]
+ [13 <./SIM_Pulls_nothing.pdf, page is rotated 90 degrees>] [14] [15 <./Prob_et
+afit.pdf, page is rotated 90 degrees> <./w.pdf, page is rotated 90 degrees>]
 
-LaTeX Warning: Text page 14 contains only floats.
+LaTeX Warning: Text page 16 contains only floats.
 
-[14 <./Pip.pdf, page is rotated 90 degrees> <./Pim.pdf, page is rotated 90 degr
-ees> <./P.pdf, page is rotated 90 degrees>] [15] [16]
+[16 <./Pip.pdf, page is rotated 90 degrees> <./Pim.pdf, page is rotated 90 degr
+ees> <./P.pdf, page is rotated 90 degrees>]
+<gb.pdf, id=455, 569.12625pt x 364.36125pt>
+File: gb.pdf Graphic file (type pdf)
+ <use gb.pdf>
+Package pdftex.def Info: gb.pdf used on input line 506.
+(pdftex.def)             Requested size: 398.3596pt x 227.61958pt.
+ [17] [18 <./gb.pdf, page is rotated 90 degrees>]
+
+Package amsmath Warning: Cannot use `split' here;
+(amsmath)                trying to recover with `aligned' on input line 556.
+
+./note.tex:563: Missing $ inserted.
+<inserted text> 
+                $
+l.563 \\ $\alpha_{1}$ = \int
+                            _{Boundary} dX dY
+? r
+OK, entering \nonstopmode...
+./note.tex:564: Missing $ inserted.
+<inserted text> 
+                $
+l.564 \\ $\alpha
+                _{2}$ = \int_{Boundary} Y dX dY
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./note.tex:564: Missing $ inserted.
+<inserted text> 
+                $
+l.564 \\ $\alpha_{2}$ = \int
+                            _{Boundary} Y dX dY
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./note.tex:565: Missing $ inserted.
+<inserted text> 
+                $
+l.565 \\ $\alpha
+                _{3}$ = \int_{Boundary} Y^{2} dX dY
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./note.tex:565: Missing $ inserted.
+<inserted text> 
+                $
+l.565 \\ $\alpha_{3}$ = \int
+                            _{Boundary} Y^{2} dX dY
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./note.tex:566: Missing $ inserted.
+<inserted text> 
+                $
+l.566 \\ $\alpha
+                _{4}$ = \int_{Boundary} X dX dY
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./note.tex:566: Missing $ inserted.
+<inserted text> 
+                $
+l.566 \\ $\alpha_{4}$ = \int
+                            _{Boundary} X dX dY
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./note.tex:567: Missing $ inserted.
+<inserted text> 
+                $
+l.567 \\ $\alpha
+                _{5}$ = \int_{Boundary} X^{2} dX dY
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./note.tex:567: Missing $ inserted.
+<inserted text> 
+                $
+l.567 \\ $\alpha_{5}$ = \int
+                            _{Boundary} X^{2} dX dY
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./note.tex:568: Missing $ inserted.
+<inserted text> 
+                $
+l.568 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./note.tex:569: Missing $ inserted.
+<inserted text> 
+                $
+l.569 ...aluate the integral $ \alpha_{1}$, \alpha
+                                                  _{2}$, \alpha_{3}$, \alpha...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./note.tex:569: Missing $ inserted.
+<inserted text> 
+                $
+l.569 ...tegral $ \alpha_{1}$, \alpha_{2}$, \alpha
+                                                  _{3}$, \alpha_{4}$ and \al...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./note.tex:569: Missing $ inserted.
+<inserted text> 
+                $
+l.569 ...ha_{1}$, \alpha_{2}$, \alpha_{3}$, \alpha
+                                                  _{4}$ and \alpha_{5}$. The...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./note.tex:569: Missing $ inserted.
+<inserted text> 
+                $
+l.569 ...{2}$, \alpha_{3}$, \alpha_{4}$ and \alpha
+                                                  _{5}$. The uniform random ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[19] [20]
 REFERENCES
-[17
+Missing character: There is no å in font cmr12!
+[21
 
-] (./note.aux) ) 
+] (./note.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4959 strings out of 493089
- 71614 string characters out of 6134842
- 152525 words of memory out of 5000000
- 8183 multiletter control sequences out of 15000+600000
- 13691 words of font info for 53 fonts, out of 8000000 for 9000
+ 4970 strings out of 493089
+ 71764 string characters out of 6134842
+ 152589 words of memory out of 5000000
+ 8192 multiletter control sequences out of 15000+600000
+ 12444 words of font info for 48 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 59i,11n,94p,922b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.
-pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on note.pdf (18 pages, 504699 bytes).
+ 59i,12n,94p,948b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on note.pdf (22 pages, 612321 bytes).
 PDF statistics:
- 497 PDF objects out of 1000 (max. 8388607)
- 246 compressed objects within 3 object streams
+ 557 PDF objects out of 1000 (max. 8388607)
+ 274 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
