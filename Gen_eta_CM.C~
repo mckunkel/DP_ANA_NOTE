@@ -1,0 +1,364 @@
+Double_t M_P = 0.938272;   //Proton
+Double_t M_Pi = 0.139570;  //Pion
+Double_t M_PiZ = 0.1349766;  //Pion Zero
+Double_t M_Eta = 0.547853;  //Eta
+Double_t M_Eta_Prime = 0.95778;  //Eta_Prime
+Double_t Melectron = 0.000510999; //Electron
+Double_t c = 29.9792458; //units m/s/e7
+Double_t pi = TMath::Pi();
+Double_t DegToRad = pi/180.0; 
+//================= USER SHOULD CAREFULLY DEFINE BELOW =======================
+//const Int_t nbin= a; // Must be a const for array with variable size
+// Define the varibles for analysis
+Double_t eta_low =M_Eta - 1*(0.01);// 2 Sigma && 0.45(DATA SORTED RANGE)
+Double_t eta_high=M_Eta + 1*(0.01);//2 sigma && 0.65(DATA SORTED RANGE)
+Double_t etaP_low=M_Eta_Prime - 3*(0.005);//3 Sigma && 0.85(DATA SORTED RANGE)
+Double_t etaP_high=M_Eta_Prime + 3*(0.005);//3 Sigma && 1.05(DATA SORTED RANGE)
+Double_t Eg_low=1.4553;
+Double_t Eg_high=3.2;// Below 3.2 the three prong trigger Max is 5.55
+
+void Gen_eta_CM()
+{
+
+  
+  TH1D *h1=new TH1D("h1",";Y;",20,-1.5,1.5);
+  TH1D *h2=new TH1D("h2","",20,-1.5,1.5);
+  TH1D *h3=new TH1D("h3","",20,-1.5,1.5);
+  TH1D *h4=new TH1D("h4","",20,-1.5,1.5);
+  TH1D *h5=new TH1D("h5","",20,-1.5,1.5);
+  TH1D *h6=new TH1D("h6","",20,-1.5,1.5);
+  TH1D *h7=new TH1D("h7","",20,-1.5,1.5);
+  TH1D *h8=new TH1D("h8","",20,-1.5,1.5);
+  TH1D *h9=new TH1D("h9","",20,-1.5,1.5);
+  TH1D *h10=new TH1D("h10","",20,-1.5,1.5);
+  TH1D *h11=new TH1D("h11","",20,-1.5,1.5);
+  TH1D *h12=new TH1D("h12","",20,-1.5,1.5);
+  TH1D *h13=new TH1D("h13","",20,-1.5,1.5);
+  TH1D *h14=new TH1D("h14","",20,-1.5,1.5);
+  TH1D *h15=new TH1D("h15","",20,-1.5,1.5);
+  TH1D *h16=new TH1D("h16","",20,-1.5,1.5);
+  TH1D *h17=new TH1D("h17","",20,-1.5,1.5);
+  TH1D *h18=new TH1D("h18","",20,-1.5,1.5);
+  TH1D *h19=new TH1D("h19","",20,-1.5,1.5);
+  TH1D *h20=new TH1D("h20","",20,-1.5,1.5);
+
+  TChain *chain = new TChain("LepTree"); 
+  //chain->Add("/volatile/clas/clasg12/sghosh//PhaseSpace_SIM/KF_*.root");
+  chain->Add("/Volumes/G12_DATA/SIM_FILES_G12/OLD_GOOD_JUNE/KF_etaP_PipPimEta_PipPim2Gam_BESIII.root");
+  Int_t trip_pass, Pass_all;
+  Int_t P_sec, Ep_sec, Em_sec;
+  Double_t E_g,mm_P_OUT, mm_PEpEm_OUT,CM_Theta_P_OUT,CM_Theta_PEpEm_OUT,CM_Theta_PEpEm_OUT,X_OUT,Y_OUT;
+  Double_t E_g_IN,mm_P_IN,mm_PEpEm_IN,CM_Theta_P_IN,X_IN,Y_IN;
+  Int_t NProt,NPip,NPim;
+  Int_t Reconstruct_Pass;
+  chain->SetBranchAddress("Reconstruct_Pass",&Reconstruct_Pass);
+  chain->SetBranchAddress("E_g",&E_g);
+  chain->SetBranchAddress("E_g_IN",&E_g_IN);
+  chain->SetBranchAddress("trip_pass",&trip_pass);
+  chain->SetBranchAddress("Pass_all",&Pass_all);
+  chain->SetBranchAddress("P_sec",&P_sec);
+  chain->SetBranchAddress("Ep_sec",&Ep_sec);
+  chain->SetBranchAddress("Em_sec",&Ep_sec);
+  chain->SetBranchAddress("NProt",&NProt);
+  chain->SetBranchAddress("NPip",&NPip);
+  chain->SetBranchAddress("NPim",&NPim);
+  chain->SetBranchAddress("mm_P_OUT",&mm_P_OUT);
+  chain->SetBranchAddress("mm_P_IN",&mm_P_IN);
+  chain->SetBranchAddress("mm_PEpEm_IN",&mm_PEpEm_IN);
+  chain->SetBranchAddress("CM_Theta_P_IN",&CM_Theta_P_IN);
+  chain->SetBranchAddress("CM_Theta_PEpEm_OUT",&CM_Theta_PEpEm_OUT);
+  chain->SetBranchAddress("mm_PEpEm_OUT",&mm_PEpEm_OUT);
+  chain->SetBranchAddress("CM_Theta_P_OUT",&CM_Theta_P_OUT);
+  chain->SetBranchAddress("X_IN",&X_IN);
+  chain->SetBranchAddress("Y_IN",&Y_IN);
+  chain->SetBranchAddress("X_OUT",&X_OUT);
+  chain->SetBranchAddress("Y_OUT",&Y_OUT);
+  Double_t Pull_Chi_etaCon_diPion,Pull_Prob_etaCon_diPion;
+  chain->SetBranchAddress("Pull_Chi_etaCon_diPion",&Pull_Chi_etaCon_diPion);
+  chain->SetBranchAddress("Pull_Prob_etaCon_diPion",&Pull_Prob_etaCon_diPion);
+  Double_t Pull_Chi_etafit_diPion,Pull_Prob_etafit_diPion;
+  chain->SetBranchAddress("Pull_Chi_etafit_diPion",&Pull_Chi_etafit_diPion);
+  chain->SetBranchAddress("Pull_Prob_etafit_diPion",&Pull_Prob_etafit_diPion);
+  Double_t Lab_Phi_PEpEm_OUT,Lab_Phi_P_OUT;
+  chain->SetBranchAddress("Lab_Phi_PEpEm_OUT",&Lab_Phi_PEpEm_OUT);
+  chain->SetBranchAddress("Lab_Phi_P_OUT",&Lab_Phi_P_OUT);
+  Double_t Vx, Vy, Vz;
+  chain->SetBranchAddress("Vx",&Vx);
+  chain->SetBranchAddress("Vy",&Vy);
+  chain->SetBranchAddress("Vz",&Vz);
+  Double_t Timing_P,Timing_Ep,Timing_Em;
+  chain->SetBranchAddress("Timing_P",&Timing_P);
+  chain->SetBranchAddress("Timing_Ep",&Timing_Ep);
+  chain->SetBranchAddress("Timing_Em",&Timing_Em);
+  //============================================================================
+  Int_t E_g_Pass,CM_ETAP_Pass,CM_ETA_Pass,KF_Pass,B_Pass,T_Pass,Vz_Pass,Ti_Pass,Eta_Pass;
+  Int_t Etap_Pass; 
+  //=======================================================
+  Int_t EntS1=chain->GetEntries();
+  for (Int_t j=0;j<EntS1;j++) {
+    chain->GetEntry(j);	      
+    if(E_g_IN >= Eg_low && E_g_IN <= Eg_high) // Beam Energy
+      {	
+    if(E_g >= Eg_low && E_g <= Eg_high) // Beam Energy
+      E_g_Pass=1;
+    else
+      E_g_Pass=0;
+    if(TMath::Abs(CM_Theta_PEpEm_OUT)<0.85) // Cos_th_CM of eta
+      CM_ETA_Pass=1;
+    else
+      CM_ETA_Pass=0;
+    if(TMath::Abs(CM_Theta_P_OUT)<0.85) // Cos_th_CM of eta'
+      CM_ETAP_Pass=1;
+    else
+      CM_ETAP_Pass=0;
+    if(Pull_Prob_etafit_diPion > 0.01) // 1C eta fit
+      KF_Pass=1;
+    else
+      KF_Pass=0;
+    if(sqrt((Vx*Vx)+(Vy*Vy)) <= 2)
+      T_Pass=1;
+    else
+      T_Pass=0;
+    if(Vz >=-110 && Vz<=-70)
+      Vz_Pass=1;
+    else
+      Vz_Pass=0;
+    if(Timing_P < 1.2 && Timing_Ep < 1.2 && Timing_Em < 1.2)
+      Ti_Pass=1;
+    else
+      Ti_Pass=0;
+    if(mm_PEpEm_OUT >= eta_low && mm_PEpEm_OUT <= eta_high) //Very Important pass
+      Eta_Pass=1;
+    else
+      Eta_Pass=0;
+    if(mm_P_OUT >= etaP_low && mm_P_OUT <= etaP_high) 
+      Etap_Pass=1;
+    else
+      Etap_Pass=0;
+    
+    //if(Pass_all==1  && Reconstruct_Pass==1 && E_g_Pass==1 && CM_ETAP_Pass==1 && KF_Pass==1 && Eta_Pass==1  && Etap_Pass==1)
+
+    {
+	if(CM_Theta_PEpEm_OUT > -1 && CM_Theta_PEpEm_OUT <-0.9 )
+	  h1->Fill((Y_IN+1)*(M_Pi/(M_Eta + 2*M_Pi)));
+	if(CM_Theta_PEpEm_OUT > -0.9 && CM_Theta_PEpEm_OUT <-0.8 )
+	  h2->Fill((Y_IN+1)*(M_Pi/(M_Eta + 2*M_Pi)));
+	if(CM_Theta_PEpEm_OUT > -0.8 && CM_Theta_PEpEm_OUT <-0.7 )
+	  h3->Fill((Y_IN+1)*(M_Pi/(M_Eta + 2*M_Pi)));
+	if(CM_Theta_PEpEm_OUT > -0.7 && CM_Theta_PEpEm_OUT <-0.6 )
+	  h4->Fill((Y_IN+1)*(M_Pi/(M_Eta + 2*M_Pi)));
+	if(CM_Theta_PEpEm_OUT > -0.6 && CM_Theta_PEpEm_OUT <-0.5 )
+	  h5->Fill((Y_IN+1)*(M_Pi/(M_Eta + 2*M_Pi)));
+	if(CM_Theta_PEpEm_OUT > -0.5 && CM_Theta_PEpEm_OUT <-0.4 )
+	  h6->Fill((Y_IN+1)*(M_Pi/(M_Eta + 2*M_Pi)));
+	if(CM_Theta_PEpEm_OUT > -0.4 && CM_Theta_PEpEm_OUT <-0.3 )
+	  h7->Fill((Y_IN+1)*(M_Pi/(M_Eta + 2*M_Pi)));
+	if(CM_Theta_PEpEm_OUT > -0.3 && CM_Theta_PEpEm_OUT <-0.2 )
+	  h8->Fill((Y_IN+1)*(M_Pi/(M_Eta + 2*M_Pi)));
+	if(CM_Theta_PEpEm_OUT > -0.2 && CM_Theta_PEpEm_OUT <-0.1 )
+	  h9->Fill((Y_IN+1)*(M_Pi/(M_Eta + 2*M_Pi)));
+	if(CM_Theta_PEpEm_OUT > -0.1 && CM_Theta_PEpEm_OUT <0 )
+	  h10->Fill((Y_IN+1)*(M_Pi/(M_Eta + 2*M_Pi)));
+	if(CM_Theta_PEpEm_OUT > 0 && CM_Theta_PEpEm_OUT <0.1 )
+	  h11->Fill((Y_IN+1)*(M_Pi/(M_Eta + 2*M_Pi)));
+	if(CM_Theta_PEpEm_OUT > 0.1 && CM_Theta_PEpEm_OUT <0.2 )
+	  h12->Fill((Y_IN+1)*(M_Pi/(M_Eta + 2*M_Pi)));
+	if(CM_Theta_PEpEm_OUT > 0.2 && CM_Theta_PEpEm_OUT <0.3 )
+	  h13->Fill((Y_IN+1)*(M_Pi/(M_Eta + 2*M_Pi)));
+	if(CM_Theta_PEpEm_OUT > 0.3 && CM_Theta_PEpEm_OUT <0.4 )
+	  h14->Fill((Y_IN+1)*(M_Pi/(M_Eta + 2*M_Pi)));
+	if(CM_Theta_PEpEm_OUT > 0.4 && CM_Theta_PEpEm_OUT <0.5 )
+	  h15->Fill((Y_IN+1)*(M_Pi/(M_Eta + 2*M_Pi)));
+	if(CM_Theta_PEpEm_OUT > 0.5 && CM_Theta_PEpEm_OUT <0.6 )
+	  h16->Fill((Y_IN+1)*(M_Pi/(M_Eta + 2*M_Pi)));
+	if(CM_Theta_PEpEm_OUT > 0.6 && CM_Theta_PEpEm_OUT <0.7 )
+	  h17->Fill((Y_IN+1)*(M_Pi/(M_Eta + 2*M_Pi)));
+	if(CM_Theta_PEpEm_OUT > 0.7 && CM_Theta_PEpEm_OUT <0.8 )
+	  h18->Fill((Y_IN+1)*(M_Pi/(M_Eta + 2*M_Pi)));
+	if(CM_Theta_PEpEm_OUT > 0.8 && CM_Theta_PEpEm_OUT <0.9 )
+	  h19->Fill((Y_IN+1)*(M_Pi/(M_Eta + 2*M_Pi)));
+	if(CM_Theta_PEpEm_OUT > 0.9 && CM_Theta_PEpEm_OUT <1 )
+	  h20->Fill((Y_IN+1)*(M_Pi/(M_Eta + 2*M_Pi)));
+      }
+      }
+  }
+  
+  h1->Scale(1/h1->GetEntries());
+  h2->Scale(1/h2->GetEntries());
+  h3->Scale(1/h3->GetEntries());
+  h4->Scale(1/h4->GetEntries());
+  h5->Scale(1/h5->GetEntries());
+  h6->Scale(1/h6->GetEntries());
+  h7->Scale(1/h7->GetEntries());
+  h8->Scale(1/h8->GetEntries());
+  h9->Scale(1/h9->GetEntries());
+  h10->Scale(1/h10->GetEntries());
+  h11->Scale(1/h11->GetEntries());
+  h12->Scale(1/h12->GetEntries());
+  h13->Scale(1/h13->GetEntries());
+  h14->Scale(1/h14->GetEntries());
+  h15->Scale(1/h15->GetEntries());
+  h16->Scale(1/h16->GetEntries());
+  h17->Scale(1/h17->GetEntries());
+  h18->Scale(1/h18->GetEntries());
+  h19->Scale(1/h19->GetEntries());
+  h20->Scale(1/h20->GetEntries());
+
+  h1->GetYaxis()->SetRangeUser(0,0.2);
+  h1->SetLineColor(2);  
+  h1->Draw();
+  h2->SetLineColor(3);
+  h2->Draw("same");
+  h3->SetLineColor(4);
+  h3->Draw("same");
+  h4->SetLineColor(1);
+  h4->Draw("same");
+  h5->SetLineColor(1);
+  h5->Draw("same");
+  h6->SetLineColor(1);
+  h6->Draw("same");
+  h7->SetLineColor(1);
+  h7->Draw("same");
+  h8->SetLineColor(1);
+  h8->Draw("same");
+  h9->SetLineColor(1);
+  h9->Draw("same");
+  h10->SetLineColor(1);
+  h10->Draw("same");
+  h11->SetLineColor(1);
+  h11->Draw("same");
+  h12->SetLineColor(1);
+  h12->Draw("same");
+  h13->SetLineColor(1);
+  h13->Draw("same");
+  h14->SetLineColor(1);
+  h14->Draw("same");
+  h15->SetLineColor(1);
+  h15->Draw("same");
+  h16->SetLineColor(1);
+  h16->Draw("same");
+  h17->SetLineColor(1);
+  h17->Draw("same");
+  h18->SetLineColor(4);
+  h18->Draw("same");
+  h19->SetLineColor(3);
+  h19->Draw("same");
+  h20->SetLineColor(2);
+  h20->Draw("same");
+  
+  // TCanvas *c1=new TCanvas("c1","",600,400);
+  // h1->SetLineColor(1);
+  // h2->SetLineColor(2);
+  // h1->GetXaxis()->SetTitle("Mx(p)");
+  // h1->Draw();
+  // h2->Draw("same");
+  // leg = new TLegend(0.12,0.7,0.48,0.89);
+  // leg->AddEntry(h1,"Abs|Cos(#theta)_{CM_of_#eta}| < 0.85","l");
+  // leg->AddEntry(h2,"Abs|Cos(#theta)_{CM_of_#eta}| #geq 0.85","l");
+  // leg->Draw();
+  
+  // TCanvas *c2=new TCanvas("c2","",600,400);
+  // h4->SetLineColor(1);
+  // h5->SetLineColor(2);
+  // h4->GetXaxis()->SetTitle("Y");
+  // h4->Draw();
+  // h5->Draw("same");
+
+  leg = new TLegend(0.9,0.0,1,1);
+  leg->SetHeader("Cos(#theta)_{CM} of #eta"); // option "C" allows to center the header
+  leg->AddEntry(h1,"-1 to -0.9","l");
+  leg->AddEntry(h2,"-0.9 to -0.8","l");
+  leg->AddEntry(h3,"-0.8 to -0.7","l");
+  leg->AddEntry(h4,"-0.7 to -0.6","l");
+  leg->AddEntry(h5,"-0.6 to -0.5","l");
+  leg->AddEntry(h6,"-0.5 to -0.4","l");
+  leg->AddEntry(h7,"-0.4 to -0.3","l");
+  leg->AddEntry(h8,"-0.3 to -0.2","l");
+  leg->AddEntry(h9,"-0.2 to -0.1","l");
+  leg->AddEntry(h10,"-0.1 to 0","l");
+  leg->AddEntry(h11,"0 to 0.1","l");
+  leg->AddEntry(h12,"0.1 to 0.2","l");
+  leg->AddEntry(h13,"0.2 to 0.3","l");
+  leg->AddEntry(h14,"0.3 to 0.4","l");
+  leg->AddEntry(h15,"0.4 to 0.5","l");
+  leg->AddEntry(h16,"0.5 to 0.6","l");
+  leg->AddEntry(h17,"0.6 to 0.7","l");
+  leg->AddEntry(h18,"0.7 to 0.8","l");
+  leg->AddEntry(h19,"0.8 to 0.9","l");
+  leg->AddEntry(h20,"0.9 to 1","l");
+  leg->Draw();
+  
+  // c1->SaveAs("Cs_Eta_Mxp.pdf");
+  // c2->SaveAs("Cs_Eta_Y.pdf");
+  //h3->Draw();
+
+  
+  //Int_t aa=h4->GetEntries();
+  // Double_t aa=data->GetEntries();
+  //   Double_t bb=sim->GetEntries();
+  //   //cout<<aa<<"\t"<<bb<<endl;
+  //   sim->Scale(aa/bb);  
+  //   data->SetLineColor(2);
+  //   data->GetYaxis()->SetRangeUser(0,12000);
+  //   data->Draw();
+  //   sim->Draw("same");
+
+  //   leg = new TLegend(0.65,0.6,0.88,0.88);
+  //   leg->AddEntry(data,"Data","l");
+  //   leg->AddEntry(sim,"Sim","l");
+  //   leg->Draw();
+
+  //   TLine *l1=new TLine(-0.85,0,-0.85,6000);
+  //   l1->SetLineColor(kMagenta);
+  //   l1->Draw();
+  //   TLine *l2=new TLine(0.85,0,0.85,6000);
+  //   l2->SetLineColor(kMagenta);
+  //   l2->Draw();
+  // }
+  // Double_t background(Double_t *x, Double_t *par) {
+  //   return par[0] + par[1]*x[0] + par[2]*x[0]*x[0]+ par[3]*pow(x[0],3);
+}
+
+
+/*{
+	if(CM_Theta_PEpEm_OUT > -1 && CM_Theta_PEpEm_OUT <-0.9 )
+	  h1->Fill(Y_IN);
+	if(CM_Theta_PEpEm_OUT > -0.9 && CM_Theta_PEpEm_OUT <-0.8 )
+	  h2->Fill(Y_IN);
+	if(CM_Theta_PEpEm_OUT > -0.8 && CM_Theta_PEpEm_OUT <-0.7 )
+	  h3->Fill(Y_IN);
+	if(CM_Theta_PEpEm_OUT > -0.7 && CM_Theta_PEpEm_OUT <-0.6 )
+	  h4->Fill(Y_IN);
+	if(CM_Theta_PEpEm_OUT > -0.6 && CM_Theta_PEpEm_OUT <-0.5 )
+	  h5->Fill(Y_IN);
+	if(CM_Theta_PEpEm_OUT > -0.5 && CM_Theta_PEpEm_OUT <-0.4 )
+	  h6->Fill(Y_IN);
+	if(CM_Theta_PEpEm_OUT > -0.4 && CM_Theta_PEpEm_OUT <-0.3 )
+	  h7->Fill(Y_IN);
+	if(CM_Theta_PEpEm_OUT > -0.3 && CM_Theta_PEpEm_OUT <-0.2 )
+	  h8->Fill(Y_IN);
+	if(CM_Theta_PEpEm_OUT > -0.2 && CM_Theta_PEpEm_OUT <-0.1 )
+	  h9->Fill(Y_IN);
+	if(CM_Theta_PEpEm_OUT > -0.1 && CM_Theta_PEpEm_OUT <0 )
+	  h10->Fill(Y_IN);
+	if(CM_Theta_PEpEm_OUT > 0 && CM_Theta_PEpEm_OUT <0.1 )
+	  h11->Fill(Y_IN);
+	if(CM_Theta_PEpEm_OUT > 0.1 && CM_Theta_PEpEm_OUT <0.2 )
+	  h12->Fill(Y_IN);
+	if(CM_Theta_PEpEm_OUT > 0.2 && CM_Theta_PEpEm_OUT <0.3 )
+	  h13->Fill(Y_IN);
+	if(CM_Theta_PEpEm_OUT > 0.3 && CM_Theta_PEpEm_OUT <0.4 )
+	  h14->Fill(Y_IN);
+	if(CM_Theta_PEpEm_OUT > 0.4 && CM_Theta_PEpEm_OUT <0.5 )
+	  h15->Fill(Y_IN);
+	if(CM_Theta_PEpEm_OUT > 0.5 && CM_Theta_PEpEm_OUT <0.6 )
+	  h16->Fill(Y_IN);
+	if(CM_Theta_PEpEm_OUT > 0.6 && CM_Theta_PEpEm_OUT <0.7 )
+	  h17->Fill(Y_IN);
+	if(CM_Theta_PEpEm_OUT > 0.7 && CM_Theta_PEpEm_OUT <0.8 )
+	  h18->Fill(Y_IN);
+	if(CM_Theta_PEpEm_OUT > 0.8 && CM_Theta_PEpEm_OUT <0.9 )
+	  h19->Fill(Y_IN);
+	if(CM_Theta_PEpEm_OUT > 0.9 && CM_Theta_PEpEm_OUT <1 )
+	  h20->Fill(Y_IN);
+      }*/

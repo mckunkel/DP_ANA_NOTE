@@ -272,44 +272,6 @@ The G12 Corrections were derived from the exclusive $\pi^{+}$, $\pi^{-}$ and pro
 \item  Geometric Fiducial Cut : This cut removes the dead part of the detector from the $\theta-\phi$ map of the particle. We used it with the "nominal" option. 
 \end {itemize}
 
-\subsection{Vetex Cut}
-\label{VCut}
-In the g12 experiment the target was positioned -90 cm from the CLAS center. The target cell was 40 cm long and 2 cm in radius in the form of a cylinder filled with unpolarised liquid hydrogen. We used this target information and imposed it to all event vertexes. We required all events  production vertex tracks to originate in the target region via the condition that $\sqrt{v_{x}^{2} + v_{y}^{2}}$ $\leq$ 2 cm and -110 $\geq$ $v_{z}$ $\leq$ -70 cm. 
-
-\begin{figure}[ht!]
-\centerline{
-\includegraphics[height=5.8in]{vertex.pdf}}
-\caption{[tpho + tprop -scvt] distribution from the simulation and data for proton, $\pi^{+}$ and $\pi^{-}$.}
-\label{Fig1}
-\end{figure}
-
-\subsection{Timing Cuts on proton, $\pi^{+}$ and $\pi^{-}$}
-\label{TCut}
-As a post PID improvement of the detected final state particles $\pi^{+}$, $\pi^{-}$ and proton, we introduced a vertex timing $(t_{vert})$ cut of particles in the analysis. The $t_{vert}$, vertex time is the instant of time the particle left the target. One can calculate it through the information of the TOF detectors as,
-
-\begin{eqnarray*}
-t_{vert}(TOF) = t_{TOF}  -  \frac{l_{TOF}}{c\beta}
-\end{eqnarray*}
-
-where $t_{TOF}$ and $l_{TOF}$ are the measured time and length of particle in TOF sub detector. Here c is the velocity of light in vacuum and $\beta$ is the Lorentz factor of the particle calculated by knowing the velocity(v) of particle as $\beta = \frac{v}{c}$. The same vertex timing $(t_{vert})$ information can also be calculated from the RF-corrected time instant of the photon ($t_{photon}$)  crossing the target center measure by the tagger added with the $t_{prop}$, which is the propagation time from the center of the target to the track vertex. Given by,
-
-\begin{eqnarray*}
-t_{vert}(Tagger) = t_{photon} + t_{prop}.
-\end{eqnarray*}
-
-
-The difference of the $t_{vert}(TOF)$ from $t_{vert}(Tagger)$ is shown in Fig.$~\ref{Fig2}$, and we make a cut of $\pm$ 1.0 ns around 0 ns for all the final state particles in both simulation and data. 
-\begin{figure}[ht!]
-\centerline{
-\includegraphics[height=5.8in]{timing.pdf}}
-\caption{[$t_{vert}(TOF)$ - $t_{vert}(Tagger)$] distribution from the simulation and data for proton(Upper), $\pi^{+}$(Middle) and $\pi^{-}$(Lower).}
-\label{Fig2}
-\end{figure}
-
-\subsection{$\mid$ $\cos\theta_{center-of-mass}$ of $\eta^{\prime}$ $\mid$ $\leq$ 0.85 Cut}
-\label{Cos}
-The events are generated with the differential cross sections of $\eta^{\prime}$ from the g11 measurement ~\cite{Williams:2009yj} within a $\mid$ $\cos\theta_{center-of-mass}$ of $\eta^{\prime}$ $\mid$ $\leq$ 0.85. The earlier measurement of CLAS g11 has reported the differential cross sections in $\mid$ $\cos\theta_{center-of-mass}$ of $\eta^{\prime}$ $\mid$ $\leq$ 0.85 window as the yield drops near to the beam pipe and hence this region is removed from the analysis. 
-
 \subsection{Kinematic Fitting}
 \label{KF}
 Kinematic fitter is a useful tool often used to get rid of unwanted background from signal channels and helps to improve the signal to background ratio.  Any measurement with a tool comes with an error, and it can be represented as a vector  $\vec{\eta}$. We can also define the measurement as 
@@ -401,8 +363,6 @@ $\gamma$ E-pull                           & -0.312 & 1.092  \\
 \label{tab2}
 \end{table}
 
-
-
 \subsubsection{Kinematic Fit to the Analysis}
 	
 \begin{figure}[ht!]
@@ -417,6 +377,90 @@ The tuned Kinematic fitter for the 4C constrained fit is again used for the chan
 \gamma p \rightarrow (\eta)_{Missing} \pi^{+} \pi^{-} p. (1-C)
 \end{eqnarray*}\\	
  The 1-C constrained fit requires the four-momentum [beam] + [target] - ( [$\pi^{+}$] [$\pi^{-}$] [p]) to be an [$\eta$] meson. The reaction hypothesis has the same set of final state particles as for the tuned channel, hence one can comfortably use it without tuning it for our reaction hypothesis again. The Pull probability for the channel is shown in Fig.~\ref{Fig5} and the dotted line at 0.01 shows the 1$\%$ Pull probability cut to reject events. 
+
+\subsection{$\mid$ $\cos\theta_{center-of-mass}$ of $\eta^{\prime}$ $\mid$ $\leq$ 0.85 Cut}
+\label{Cos}
+
+
+The events are generated with the differential cross sections of $\eta^{\prime}$ from the g11 measurement ~\cite{Williams:2009yj} within a $\mid$ $\cos\theta_{center-of-mass}$ of $\eta^{\prime}$ $\mid$ $\leq$ 0.85. The earlier measurement of CLAS g11 has reported the differential cross sections in $\mid$ $\cos\theta_{center-of-mass}$ of $\eta^{\prime}$ $\mid$ $\leq$ 0.85 window as the yield drops near to the beam pipe and hence this region is removed from the analysis.  
+
+\subsection{$\mid$ $\cos\theta_{center-of-mass}$ of $\eta$ $\mid$ $\leq$ 0.85 Cut}
+\label{CosEta}
+
+  The $\eta$ mesons along the beam pipe in the forward and backward region is removed with a condition requiring $\mid$ $\cos$ $\theta_{center-of-mass}$ of $\eta$ $\mid$ $\leq$ 0.85.  The Figure.~\ref{Fig_CsE_1} shows the $\cos$($\theta$) distribution of $\eta$ meson in the rest frame of $\eta^{\prime}$ meson for both data and simulation. The Figure.~\ref{Fig_CsE_2} clearly shows the steep drop of acceptance for the $\eta$ meson with high kinetic energy decaying along the beam pipe region. Hence the a geometrical cut at $\mid$ $\cos$ $\theta_{center-of-mass}$ of $\eta$ $\mid$ $\leq$ 0.85 is placed in order to calculate integrated acceptance for Dalitz plot parameters. 
+  
+ \begin{figure}[ht!]
+\centerline{
+\includegraphics[width=12cm,height=8cm]{cs.pdf}}
+\caption{$\cos\theta_{center-of-mass}$ of $\eta$ distribution from g12 data and simulation. }
+\label{Fig_CsE_1}
+\end{figure}
+
+
+\begin{figure}[ht!]
+\centerline{
+%\includegraphics[width=12cm,height=8cm]{Gen_T.pdf}}
+%\includegraphics[width=12cm,height=8cm]{Sim_T.pdf}}
+\includegraphics[width=12cm,height=8cm]{Acc_T.pdf}}
+\caption{The acceptance vs $T_{\eta}$ in 0.1 bins of $\cos$ 
+$\theta_{center-of-mass}$ of $\eta$ meson. }
+\label{Fig_CsE_2}
+\end{figure}
+
+The kinematics of $\eta$ meson is directly related to the Dalitz variable Y. Hence a comparison of the cut is also presented for the Dalitz variable Y in Figure.~\ref{Fig_CsE_3} and  ~\ref{Fig_CsE_4} from simulation and g12 data respectively.    
+
+\begin{figure}[ht!]
+\centerline{
+\includegraphics[width=12cm,height=8cm]{eta_CosTh_Cut.pdf}}
+\caption{Dalitz Variable Y distribution normalised to 1 in each 0.1 bins of $\cos\theta_{center-of-mass}$ of $\eta$ from simulation.}
+\label{Fig_CsE_3}
+\end{figure}
+
+\begin{figure}[ht!]
+\centerline{
+\includegraphics[width=12cm,height=8cm]{sim_CsEta.pdf}}
+\caption{Dalitz Variable Y distribution normalised to 1 in each 0.1 bins of $\cos\theta_{center-of-mass}$ of $\eta$ from g12 data.}
+\label{Fig_CsE_4}
+\end{figure}
+
+\subsection{Vetex Cut}
+\label{VCut}
+In the g12 experiment the target was positioned -90 cm from the CLAS center. The target cell was 40 cm long and 2 cm in radius in the form of a cylinder filled with unpolarised liquid hydrogen. We used this target information and imposed it to all event vertexes. We required all events  production vertex tracks to originate in the target region via the condition that $\sqrt{v_{x}^{2} + v_{y}^{2}}$ $\leq$ 2 cm and -110 $\geq$ $v_{z}$ $\leq$ -70 cm. 
+
+\begin{figure}[ht!]
+\centerline{
+\includegraphics[height=5.8in]{vertex.pdf}}
+\caption{[tpho + tprop -scvt] distribution from the simulation and data for proton, $\pi^{+}$ and $\pi^{-}$.}
+\label{Fig1}
+\end{figure}
+
+\subsection{Timing Cuts on proton, $\pi^{+}$ and $\pi^{-}$}
+\label{TCut}
+As a post PID improvement of the detected final state particles $\pi^{+}$, $\pi^{-}$ and proton, we introduced a vertex timing $(t_{vert})$ cut of particles in the analysis. The $t_{vert}$, vertex time is the instant of time the particle left the target. One can calculate it through the information of the TOF detectors as,
+
+\begin{eqnarray*}
+t_{vert}(TOF) = t_{TOF}  -  \frac{l_{TOF}}{c\beta}
+\end{eqnarray*}
+
+where $t_{TOF}$ and $l_{TOF}$ are the measured time and length of particle in TOF sub detector. Here c is the velocity of light in vacuum and $\beta$ is the Lorentz factor of the particle calculated by knowing the velocity(v) of particle as $\beta = \frac{v}{c}$. The same vertex timing $(t_{vert})$ information can also be calculated from the RF-corrected time instant of the photon ($t_{photon}$)  crossing the target center measure by the tagger added with the $t_{prop}$, which is the propagation time from the center of the target to the track vertex. Given by,
+
+\begin{eqnarray*}
+t_{vert}(Tagger) = t_{photon} + t_{prop}.
+\end{eqnarray*}
+
+
+The difference of the $t_{vert}(TOF)$ from $t_{vert}(Tagger)$ is shown in Fig.$~\ref{Fig2}$, and we make a cut of $\pm$ 1.0 ns around 0 ns for all the final state particles in both simulation and data. 
+\begin{figure}[ht!]
+\centerline{
+\includegraphics[height=5.8in]{timing.pdf}}
+\caption{[$t_{vert}(TOF)$ - $t_{vert}(Tagger)$] distribution from the simulation and data for proton(Upper), $\pi^{+}$(Middle) and $\pi^{-}$(Lower).}
+\label{Fig2}
+\end{figure}
+
+
+
+
+
  
 \subsection{Result}
 
@@ -453,21 +497,21 @@ Prob(($\eta$)$\pi^{+}$$\pi^{-}$p) \textgreater 0.01                & 1901       
 \begin{figure}[ht!]
 \centerline{
 \includegraphics[width=14cm,height=4cm]{Pip.pdf}}
-\caption{Comparison of  $\pi^{+}$ momentum (top), $\pi^{+}$ $\theta$ (middle) and $\pi^{+}$ $\phi$ (bottom) with simulated (blue) events and g12 data (black) when generating Monte-Carlo with the differential cross-sections and Dalitz plot parameters.}
+\caption{Comparison of  $\pi^{+}$ momentum (left), $\pi^{+}$ $\theta$ (middle) and $\pi^{+}$ $\phi$ (right) with simulated (blue) events and g12 data (black) when generating Monte-Carlo with the differential cross-sections and Dalitz plot parameters.}
 \label{fig7}
 \end{figure}
  
 \begin{figure}[ht!]
 \centerline{
 \includegraphics[width=14cm,height=4cm]{Pim.pdf}}
-\caption{Comparison of $\pi^{-}$ momentum (top), $\pi^{-}$ $\theta$ (middle) and $\pi^{-}$ $\phi$ (bottom) with simulated (blue) events and g12 data (black) when generating Monte-Carlo with the differential cross-sections and Dalitz plot parameters.}
+\caption{Comparison of $\pi^{-}$ momentum (left), $\pi^{-}$ $\theta$ (middle) and $\pi^{-}$ $\phi$ (right) with simulated (blue) events and g12 data (black) when generating Monte-Carlo with the differential cross-sections and Dalitz plot parameters.}
 \label{fig8}
 \end{figure}
 
 \begin{figure}[ht!]
 \centerline{
 \includegraphics[width=14cm,height=4cm]{P.pdf}}
-\caption{Comparison of proton momentum (top), proton $\theta$ (middle) and proton $\phi$ (bottom) with simulated (blue) events and g12 data (black) when generating Monte-Carlo with the differential cross-sections and Dalitz plot parameters.}
+\caption{Comparison of proton momentum (left), proton $\theta$ (middle) and proton $\phi$ (right) with simulated (blue) events and g12 data (black) when generating Monte-Carlo with the differential cross-sections and Dalitz plot parameters.}
 \label{fig9}
 \end{figure}
  
@@ -550,6 +594,7 @@ N_{theory,j} = \int_{Boundary} A(1 + aY + b Y^{2} + cX + d X^{2}) dX dY
 \end{eqnarray}
 \begin{eqnarray*}
 \begin{split}
+\indent
 N_{theory,j} = A \int_{Boundary} dX dY + A a \int_{Boundary} Y dX dY 
 + A b \int_{Boundary} Y^{2} dX dY \\ + A c \int_{Boundary} X dX dY 
 + A d \int_{Boundary} X^{2} dX dY 
@@ -560,13 +605,18 @@ N_{theory,j} = A ( \alpha_{1} + a \alpha_{2} + b \alpha_{3} + c \alpha_{4} + d \
 \end{eqnarray*}
 \noindent
 Where,  
-\\ $\alpha_{1}$ = \int_{Boundary} dX dY
-\\ $\alpha_{2}$ = \int_{Boundary} Y dX dY
-\\ $\alpha_{3}$ = \int_{Boundary} Y^{2} dX dY
-\\ $\alpha_{4}$ = \int_{Boundary} X dX dY
-\\ $\alpha_{5}$ = \int_{Boundary} X^{2} dX dY
+\indent
+\\ $\alpha_{1}$ = $\int_{Boundary}$ dX dY
+\indent
+\\ $\alpha_{2}$ = $\int_{Boundary}$ Y dX dY
+\indent
+\\ $\alpha_{3}$ = $\int_{Boundary}$ $Y^{2}$ dX dY
+\indent
+\\ $\alpha_{4}$ = $\int_{Boundary}$ X dX dY
+\indent
+\\ $\alpha_{5}$ = $\int_{Boundary}$ $X^{2}$ dX dY
 
-The aim here is to evaluate the integral $ \alpha_{1}$, \alpha_{2}$, \alpha_{3}$, \alpha_{4}$ and \alpha_{5}$. The uniform random number pair, as Dalitz variable X and Y are generated within -1.5 to 1.5 for both using random number generator in ROOT and saved in a binned two dimensional histogram. If the generated pair lie inside the kinematic boundary of decay then the one binned two dimensional histogram for each integral is filled, where the integrand being the weight of the histogram.
+The aim here is to evaluate the integral $\alpha_{1}$, $\alpha_{2}$, $\alpha_{3}$, $\alpha_{4}$ and $\alpha_{5}$. The uniform random number pair, as Dalitz variable X and Y are generated within -1.5 to 1.5 for both using random number generator in ROOT and saved in a binned two dimensional histogram. If the generated pair lie inside the kinematic boundary of decay then the one binned two dimensional histogram for each integral is filled, where the integrand being the weight of the histogram.
 For instance:  histogram for integral $\alpha_{1}$ is assigned a weight of 1, histogram for integral $\alpha_{2}$ is assigned a weight of Y, integral $\alpha_{3}$ is assigned a weight of $Y^{2}$ so on and so forth. These histograms for each integral is then divided by the generated histogram and multiplied by the bin size to give the value of integration inside the Dalitz plot for each bin. It can be later translated into the global binning and used directly in the Equation.~\ref{chi}.
 
 

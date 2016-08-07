@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.4)  29 JUL 2016 17:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.4)  7 AUG 2016 13:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -366,214 +366,129 @@ Package pdftex.def Info: dalitzEtaPrime.pdf used on input line 104.
  [1 <./dalitzEtaPrime.pdf>]
 Missing character: There is no ± in font cmr12!
  [2] [3] [4] [5] [6]
-[7] <vertex.pdf, id=46, 569.12625pt x 632.3625pt>
-File: vertex.pdf Graphic file (type pdf)
- <use vertex.pdf>
-Package pdftex.def Info: vertex.pdf used on input line 281.
-(pdftex.def)             Requested size: 377.25711pt x 419.16621pt.
- [8]
-<timing.pdf, id=51, 569.12625pt x 630.355pt>
-File: timing.pdf Graphic file (type pdf)
- <use timing.pdf>
-Package pdftex.def Info: timing.pdf used on input line 304.
-(pdftex.def)             Requested size: 378.45552pt x 419.16621pt.
-
-Underfull \vbox (badness 6792) has occurred while \output is active []
-
- [9 <./vertex.pdf>] [10 <./timing.pdf>]
-<Pulls_nothing.pdf, id=144, 569.12625pt x 295.1025pt>
+[7] <Pulls_nothing.pdf, id=46, 569.12625pt x 295.1025pt>
 File: Pulls_nothing.pdf Graphic file (type pdf)
- <use Pulls_nothing.pdf>
-Package pdftex.def Info: Pulls_nothing.pdf used on input line 321.
+
+<use Pulls_nothing.pdf>
+Package pdftex.def Info: Pulls_nothing.pdf used on input line 283.
 (pdftex.def)             Requested size: 341.44365pt x 284.53346pt.
 
-<SIM_Pulls_nothing.pdf, id=145, 569.12625pt x 382.42876pt>
+<SIM_Pulls_nothing.pdf, id=47, 569.12625pt x 382.42876pt>
 File: SIM_Pulls_nothing.pdf Graphic file (type pdf)
 
 <use SIM_Pulls_nothing.pdf>
-Package pdftex.def Info: SIM_Pulls_nothing.pdf used on input line 328.
+Package pdftex.def Info: SIM_Pulls_nothing.pdf used on input line 290.
 (pdftex.def)             Requested size: 341.44365pt x 284.53922pt.
-
-<Prob_etafit.pdf, id=146, 569.12625pt x 295.1025pt>
+ [8]
+<Prob_etafit.pdf, id=51, 569.12625pt x 295.1025pt>
 File: Prob_etafit.pdf Graphic file (type pdf)
  <use Prob_etafit.pdf>
-Package pdftex.def Info: Prob_etafit.pdf used on input line 410.
+Package pdftex.def Info: Prob_etafit.pdf used on input line 370.
 (pdftex.def)             Requested size: 341.44365pt x 227.62587pt.
 
-[11]
+[9 <./Pulls_nothing.pdf, page is rotated 90 degrees>] [10 <./SIM_Pulls_nothing.
+pdf, page is rotated 90 degrees>] <cs.pdf, id=126, 569.12625pt x 412.54124pt>
+File: cs.pdf Graphic file (type pdf)
+
+<use cs.pdf>
+Package pdftex.def Info: cs.pdf used on input line 394.
+(pdftex.def)             Requested size: 341.44365pt x 227.62228pt.
+ <Acc_T.pdf, id=127, 569.12625pt x 438.63875pt>
+File: Acc_T.pdf Graphic file (type pdf)
+ <use Acc_T.pdf>
+Package pdftex.def Info: Acc_T.pdf used on input line 404.
+(pdftex.def)             Requested size: 341.44365pt x 227.62494pt.
+
+<eta_CosTh_Cut.pdf, id=128, 569.12625pt x 387.4475pt>
+File: eta_CosTh_Cut.pdf Graphic file (type pdf)
+ <use eta_CosTh_Cut.pdf>
+Package pdftex.def Info: eta_CosTh_Cut.pdf used on input line 414.
+(pdftex.def)             Requested size: 341.44365pt x 227.62248pt.
+
+<sim_CsEta.pdf, id=129, 569.12625pt x 345.29pt>
+File: sim_CsEta.pdf Graphic file (type pdf)
+ <use sim_CsEta.pdf>
+Package pdftex.def Info: sim_CsEta.pdf used on input line 421.
+(pdftex.def)             Requested size: 341.44365pt x 227.62338pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+Overfull \vbox (8.2945pt too high) has occurred while \output is active []
+
+
+[12 <./Prob_etafit.pdf, page is rotated 90 degrees> <./cs.pdf, page is rotated 
+90 degrees>] <vertex.pdf, id=224, 569.12625pt x 632.3625pt>
+File: vertex.pdf Graphic file (type pdf)
+ <use vertex.pdf>
+Package pdftex.def Info: vertex.pdf used on input line 432.
+(pdftex.def)             Requested size: 377.25711pt x 419.16621pt.
+
+Underfull \vbox (badness 2503) has occurred while \output is active []
+
+ [13 <./Acc_T.pdf, page is rotated 90 degrees> <./eta_CosTh_Cut.pdf, page is ro
+tated 90 degrees>] [14 <./sim_CsEta.pdf, page is rotated 90 degrees>]
+<timing.pdf, id=361, 569.12625pt x 630.355pt>
+File: timing.pdf Graphic file (type pdf)
+ <use timing.pdf>
+Package pdftex.def Info: timing.pdf used on input line 455.
+(pdftex.def)             Requested size: 378.45552pt x 419.16621pt.
+
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 425.
+               Default added (so using `tbp') on input line 469.
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 437.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 481.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 437.
-
-Underfull \vbox (badness 7468) has occurred while \output is active []
-
- [12 <./Pulls_nothing.pdf, page is rotated 90 degrees>]
-<w.pdf, id=198, 569.12625pt x 273.02pt>
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 481.
+ [15 <./vertex.pdf>] [16 <./timing.pdf>] <w.pdf, id=455, 569.12625pt x 273.02pt
+>
 File: w.pdf Graphic file (type pdf)
  <use w.pdf>
-Package pdftex.def Info: w.pdf used on input line 448.
+Package pdftex.def Info: w.pdf used on input line 492.
 (pdftex.def)             Requested size: 284.53638pt x 170.71623pt.
 
-<Pip.pdf, id=199, 569.12625pt x 273.02pt>
+<Pip.pdf, id=456, 569.12625pt x 273.02pt>
 File: Pip.pdf Graphic file (type pdf)
  <use Pip.pdf>
-Package pdftex.def Info: Pip.pdf used on input line 455.
+Package pdftex.def Info: Pip.pdf used on input line 499.
 (pdftex.def)             Requested size: 398.3596pt x 113.80943pt.
 
-<Pim.pdf, id=200, 569.12625pt x 273.02pt>
+<Pim.pdf, id=457, 569.12625pt x 273.02pt>
 File: Pim.pdf Graphic file (type pdf)
  <use Pim.pdf>
-Package pdftex.def Info: Pim.pdf used on input line 462.
+Package pdftex.def Info: Pim.pdf used on input line 506.
 (pdftex.def)             Requested size: 398.3596pt x 113.80943pt.
 
-<P.pdf, id=201, 569.12625pt x 273.02pt>
+<P.pdf, id=458, 569.12625pt x 273.02pt>
 File: P.pdf Graphic file (type pdf)
  <use P.pdf>
-Package pdftex.def Info: P.pdf used on input line 469.
+Package pdftex.def Info: P.pdf used on input line 513.
 (pdftex.def)             Requested size: 398.3596pt x 113.80943pt.
+ [17 <./w.pdf, page is rotated 90 degrees>]
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Text page 18 contains only floats.
 
- [13 <./SIM_Pulls_nothing.pdf, page is rotated 90 degrees>] [14] [15 <./Prob_et
-afit.pdf, page is rotated 90 degrees> <./w.pdf, page is rotated 90 degrees>]
-
-LaTeX Warning: Text page 16 contains only floats.
-
-[16 <./Pip.pdf, page is rotated 90 degrees> <./Pim.pdf, page is rotated 90 degr
+[18 <./Pip.pdf, page is rotated 90 degrees> <./Pim.pdf, page is rotated 90 degr
 ees> <./P.pdf, page is rotated 90 degrees>]
-<gb.pdf, id=455, 569.12625pt x 364.36125pt>
+<gb.pdf, id=638, 569.12625pt x 364.36125pt>
 File: gb.pdf Graphic file (type pdf)
  <use gb.pdf>
-Package pdftex.def Info: gb.pdf used on input line 506.
+Package pdftex.def Info: gb.pdf used on input line 550.
 (pdftex.def)             Requested size: 398.3596pt x 227.61958pt.
- [17] [18 <./gb.pdf, page is rotated 90 degrees>]
+ [19] [20 <./gb.pdf, page is rotated 90 degrees>]
 
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 556.
+(amsmath)                trying to recover with `aligned' on input line 601.
 
-./note.tex:563: Missing $ inserted.
-<inserted text> 
-                $
-l.563 \\ $\alpha_{1}$ = \int
-                            _{Boundary} dX dY
-? r
-OK, entering \nonstopmode...
-./note.tex:564: Missing $ inserted.
-<inserted text> 
-                $
-l.564 \\ $\alpha
-                _{2}$ = \int_{Boundary} Y dX dY
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:564: Missing $ inserted.
-<inserted text> 
-                $
-l.564 \\ $\alpha_{2}$ = \int
-                            _{Boundary} Y dX dY
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:565: Missing $ inserted.
-<inserted text> 
-                $
-l.565 \\ $\alpha
-                _{3}$ = \int_{Boundary} Y^{2} dX dY
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:565: Missing $ inserted.
-<inserted text> 
-                $
-l.565 \\ $\alpha_{3}$ = \int
-                            _{Boundary} Y^{2} dX dY
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:566: Missing $ inserted.
-<inserted text> 
-                $
-l.566 \\ $\alpha
-                _{4}$ = \int_{Boundary} X dX dY
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:566: Missing $ inserted.
-<inserted text> 
-                $
-l.566 \\ $\alpha_{4}$ = \int
-                            _{Boundary} X dX dY
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:567: Missing $ inserted.
-<inserted text> 
-                $
-l.567 \\ $\alpha
-                _{5}$ = \int_{Boundary} X^{2} dX dY
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:567: Missing $ inserted.
-<inserted text> 
-                $
-l.567 \\ $\alpha_{5}$ = \int
-                            _{Boundary} X^{2} dX dY
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:568: Missing $ inserted.
-<inserted text> 
-                $
-l.568 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:569: Missing $ inserted.
-<inserted text> 
-                $
-l.569 ...aluate the integral $ \alpha_{1}$, \alpha
-                                                  _{2}$, \alpha_{3}$, \alpha...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:569: Missing $ inserted.
-<inserted text> 
-                $
-l.569 ...tegral $ \alpha_{1}$, \alpha_{2}$, \alpha
-                                                  _{3}$, \alpha_{4}$ and \al...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:569: Missing $ inserted.
-<inserted text> 
-                $
-l.569 ...ha_{1}$, \alpha_{2}$, \alpha_{3}$, \alpha
-                                                  _{4}$ and \alpha_{5}$. The...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./note.tex:569: Missing $ inserted.
-<inserted text> 
-                $
-l.569 ...{2}$, \alpha_{3}$, \alpha_{4}$ and \alpha
-                                                  _{5}$. The uniform random ...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-[19] [20]
+[21] [22]
 REFERENCES
 Missing character: There is no å in font cmr12!
-[21
+[23
 
 ] (./note.aux)
 
@@ -581,10 +496,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4970 strings out of 493089
- 71764 string characters out of 6134842
- 152589 words of memory out of 5000000
- 8192 multiletter control sequences out of 15000+600000
+ 4995 strings out of 493089
+ 72117 string characters out of 6134842
+ 152644 words of memory out of 5000000
+ 8213 multiletter control sequences out of 15000+600000
  12444 words of font info for 48 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  59i,12n,94p,948b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -601,10 +516,10 @@ xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on note.pdf (22 pages, 612321 bytes).
+Output written on note.pdf (24 pages, 670698 bytes).
 PDF statistics:
- 557 PDF objects out of 1000 (max. 8388607)
- 274 compressed objects within 3 object streams
+ 740 PDF objects out of 1000 (max. 8388607)
+ 350 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
