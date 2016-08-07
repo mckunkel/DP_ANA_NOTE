@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.4)  7 AUG 2016 13:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.4)  7 AUG 2016 20:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -428,11 +428,11 @@ Underfull \vbox (badness 2503) has occurred while \output is active []
 
  [13 <./Acc_T.pdf, page is rotated 90 degrees> <./eta_CosTh_Cut.pdf, page is ro
 tated 90 degrees>] [14 <./sim_CsEta.pdf, page is rotated 90 degrees>]
-<timing.pdf, id=361, 569.12625pt x 630.355pt>
+<timing.pdf, id=361, 569.12625pt x 687.56876pt>
 File: timing.pdf Graphic file (type pdf)
  <use timing.pdf>
 Package pdftex.def Info: timing.pdf used on input line 455.
-(pdftex.def)             Requested size: 378.45552pt x 419.16621pt.
+(pdftex.def)             Requested size: 466.5997pt x 563.7062pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
@@ -445,8 +445,11 @@ File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 481.
- [15 <./vertex.pdf>] [16 <./timing.pdf>] <w.pdf, id=455, 569.12625pt x 273.02pt
->
+ [15 <./vertex.pdf>]
+
+LaTeX Warning: Text page 16 contains only floats.
+
+[16 <./timing.pdf>] <w.pdf, id=455, 569.12625pt x 273.02pt>
 File: w.pdf Graphic file (type pdf)
  <use w.pdf>
 Package pdftex.def Info: w.pdf used on input line 492.
@@ -469,26 +472,149 @@ File: P.pdf Graphic file (type pdf)
  <use P.pdf>
 Package pdftex.def Info: P.pdf used on input line 513.
 (pdftex.def)             Requested size: 398.3596pt x 113.80943pt.
- [17 <./w.pdf, page is rotated 90 degrees>]
 
-LaTeX Warning: Text page 18 contains only floats.
+<Before_BS.pdf, id=459, 569.12625pt x 387.4475pt>
+File: Before_BS.pdf Graphic file (type pdf)
+ <use Before_BS.pdf>
+Package pdftex.def Info: Before_BS.pdf used on input line 523.
+(pdftex.def)             Requested size: 284.53638pt x 170.7198pt.
 
-[18 <./Pip.pdf, page is rotated 90 degrees> <./Pim.pdf, page is rotated 90 degr
-ees> <./P.pdf, page is rotated 90 degrees>]
-<gb.pdf, id=638, 569.12625pt x 364.36125pt>
+
+./note.tex:529: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.529 \begin{equation}
+                      
+? r
+OK, entering \nonstopmode...
+./note.tex:531: You can't use `\leqno' in math mode.
+\endmathdisplay@a ...\df@tag \@empty \else \veqno 
+                                                  \alt@tag \df@tag \fi \ifx ...
+l.531 \end{equation}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./note.tex:531: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.531 \end{equation}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+./note.tex:531: LaTeX Error: \begin{document} ended by \end{equation}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.531 \end{equation}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./note.tex:531: Missing $ inserted.
+<inserted text> 
+                $
+l.531 \end{equation}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./note.tex:531: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.531 \end{equation}
+                    
+Things are pretty mixed up, but I think the worst is over.
+
+./note.tex:532: Missing $ inserted.
+<inserted text> 
+                $
+l.532 ...tal number of bins in the Dalitz plot. S_
+                                                  {1} is the background subt...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./note.tex:532: Missing $ inserted.
+<inserted text> 
+                $
+l.532 ... is the total number of events in the $M_
+                                                  {x}$(p) spectrum in the 3 ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[17] <After_BS.pdf, id=463, 569.12625pt x 387.4475pt>
+File: After_BS.pdf Graphic file (type pdf)
+ <use After_BS.pdf>
+Package pdftex.def Info: After_BS.pdf used on input line 536.
+(pdftex.def)             Requested size: 284.53638pt x 170.7198pt.
+
+<Hist[0][8].pdf, id=464, 569.12625pt x 363.3575pt>
+File: Hist[0][8].pdf Graphic file (type pdf)
+ <use Hist[0][8].pdf>
+Package pdftex.def Info: Hist[0][8].pdf used on input line 545.
+(pdftex.def)             Requested size: 159.33473pt x 101.7283pt.
+
+<Hist[3][5].pdf, id=465, 569.12625pt x 363.3575pt>
+File: Hist[3][5].pdf Graphic file (type pdf)
+ <use Hist[3][5].pdf>
+Package pdftex.def Info: Hist[3][5].pdf used on input line 551.
+(pdftex.def)             Requested size: 159.33473pt x 101.7283pt.
+
+Underfull \vbox (badness 1472) has occurred while \output is active []
+
+ [18 <./w.pdf, page is rotated 90 degrees> <./Pip.pdf, page is rotated 90 degre
+es>]
+[19 <./Pim.pdf, page is rotated 90 degrees> <./P.pdf, page is rotated 90 degree
+s>] <DP_Global.pdf, id=645, 569.12625pt x 364.36125pt>
+File: DP_Global.pdf Graphic file (type pdf)
+ <use DP_Global.pdf>
+Package pdftex.def Info: DP_Global.pdf used on input line 582.
+(pdftex.def)             Requested size: 284.53638pt x 170.71606pt.
+
+<gb.pdf, id=646, 569.12625pt x 364.36125pt>
 File: gb.pdf Graphic file (type pdf)
  <use gb.pdf>
-Package pdftex.def Info: gb.pdf used on input line 550.
+Package pdftex.def Info: gb.pdf used on input line 593.
 (pdftex.def)             Requested size: 398.3596pt x 227.61958pt.
- [19] [20 <./gb.pdf, page is rotated 90 degrees>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20 <./Before_BS.pdf, page is rotated 90 degrees> <./After_BS.pdf, page is rot
+ated 90 degrees>] [21 <./Hist[0][8].pdf, page is rotated 90 degrees> <./Hist[3]
+[5].pdf, page is rotated 90 degrees> <./DP_Global.pdf, page is rotated 90 degre
+es>]
+Underfull \vbox (badness 1783) has occurred while \output is active []
+
+ [22 <./gb.pdf, page is rotated 90 degrees>]
 
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 601.
+(amsmath)                trying to recover with `aligned' on input line 644.
 
-[21] [22]
+[23] <fit.pdf, id=920, 569.12625pt x 421.575pt>
+File: fit.pdf Graphic file (type pdf)
+ <use fit.pdf>
+Package pdftex.def Info: fit.pdf used on input line 674.
+(pdftex.def)             Requested size: 284.53638pt x 142.26576pt.
+ [24 <./fit.pdf, page is rotated 90 degrees>]
 REFERENCES
 Missing character: There is no å in font cmr12!
-[23
+[25
 
 ] (./note.aux)
 
@@ -496,30 +622,32 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4995 strings out of 493089
- 72117 string characters out of 6134842
- 152644 words of memory out of 5000000
- 8213 multiletter control sequences out of 15000+600000
- 12444 words of font info for 48 fonts, out of 8000000 for 9000
+ 5039 strings out of 493089
+ 72789 string characters out of 6134842
+ 152724 words of memory out of 5000000
+ 8252 multiletter control sequences out of 15000+600000
+ 13692 words of font info for 53 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 59i,12n,94p,948b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,12n,94p,948b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on note.pdf (24 pages, 670698 bytes).
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on note.pdf (26 pages, 801480 bytes).
 PDF statistics:
- 740 PDF objects out of 1000 (max. 8388607)
- 350 compressed objects within 4 object streams
+ 1001 PDF objects out of 1200 (max. 8388607)
+ 470 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
