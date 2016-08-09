@@ -1,0 +1,40 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\author{Michael C. Kunkel}
+\begin{document}
+	In ''Introduction``
+	\begin{itemize}
+		\item For figure 1, it is not clear if the plot shown is for general Dalitz plot, simulated or data corrected. Please define.
+		\item Spell check shows multiple errors.
+		\item Text shows that you refer to Equation 7, fix this.
+		\item The Dalitz plot parameters you list are for the $\eta'$ decays. This should be noted.
+		\item explain more how the DP is important to physics.
+	\end{itemize}
+	In ''G12 Data Set``
+	\begin{itemize}
+		\item The g12 experiment was a fixed target experiment which ran during March - June 2008 with $26 x 10^{9}$ recorded production triggers ~\cite{G12_AN}.  The experiment, has an energy of the photon beam ranging from 1.142 GeV to  5.425 GeV. However, the threshold production of $\eta^{\prime}$ meson is 1.455 GeV and hence the analysis will report the parameters from the threshold to the maximum available energy. The analysis starts with well calibrated data in ''.root`` format with all events arranged as per the Run number, Event number and PID along with all other informations recorded by the experiment. The final state particles proton, $\pi^{+}$ and $\pi^{-}$ information were extracted from the PART BOS bank and identified using particle identification codes compiled in the ``clas6-trunk" under the package CLASEVENT . The skim were so selected that all events has only one proton, $\pi^{+}$ and $\pi^{-}$ and any number of neutral particles. 
+		The complete reaction under study is `` $\gamma$ p $\rightarrow$ $\eta^{\prime}$($\rightarrow$ $\eta$ $\pi^{+}$ $\pi^{-}$) p " and the $\eta$ meson is reconstructed via the missing mass technique. 
+		\item Do not need the table, as this is in the g12 analysis note.
+		\item In ''Simulation``
+	\begin{itemize}
+		\item PLUTO++ is the event generator used for this analysis. 
+		\item Cite PLUTO++
+		\item Spell check shows multiple problems with this subsection
+		\item Hadron Physics $\rightarrow$ hadron physics : because neither is s proper noun.
+		\item ''obtain outputs in any desired format`` this is ambiguous and not true.
+		\item Do not need to itemize your list of simulation chain as this is in the g12 analysis note.
+	\end{itemize}
+	\end{itemize}		
+	In ''Event Selection``
+	\begin{itemize}
+		\item Do not list the G12 corrections as they are listed on the cover page for all g12 analysis notes. See Checklist on the g12 wiki.
+		\item Use the FloatBarrier flag to keep figures where you need them.
+		\item More justification for cuts are needed
+	\end{itemize}
+	In ''Result``
+	Will do after I see more in previous sections
+\end{document}
